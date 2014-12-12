@@ -2,6 +2,9 @@ import database
 import reg_tools
 
 def parseSinglePage(url):
+	if reg_tools.allowUrl(url) == False:
+		return 0
+
 	conn = database.getConn()
 	cursor = conn.cursor()
 	sql = "SELECT * FROM webpage WHERE url = %s"
@@ -24,10 +27,30 @@ def parseSinglePage(url):
 	result = cursor.execute(sql,param)
 	cursor.close()
 	conn.close()
+	return result
 
-	if result == 1 :
-		print "Succ:" + "Parse " + url
+	
+def parseAll():
+	print 'Start parse all fetched url ...'
+	conn = database.getConn()
+	cursor = conn.cursor()
+	sql = "SELECT * FROM webpage WHERE status = 1"
+	cursor.execute(sql)
+	numrows = cursor.rowcount
+	if(numrows == 0):
+		print 'Summary : There is no url waiting to parse'
+		return 0
 	else:
-		print "Fail:" + "Parse " + url 
+		cnt_succ = 0;
+		rows = cursor.fetchall()
+		for row in rows:
+			url = row[1]
+			result = parseSinglePage(url)
+			if result == 1 :
+				print "Succ:" + "Parse " + url
+			else:
+				print "Fail:" + "Parse " + url 
+		print 'Summary : All:%s Succ:%s Fail:%s'%(numrows , cnt_succ , numrows - cnt_succ)
 
-parsePage('http://www.sjtu.edu.cn')
+
+parseAll()

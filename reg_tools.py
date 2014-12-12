@@ -1,4 +1,6 @@
 import re
+import datetime
+import time
 
 def filter_tags(s):  
     re_cdata=re.compile('//<!\[CDATA\[[^>]*//\]\]>',re.I) #CDATA  
@@ -42,19 +44,19 @@ def findLastModifyTime(content):
     pattern = re.compile(title_reg , re.I)
     result = pattern.findall(content)
     if(result == []):
-        return ""
+        return 0
     else:
-        import datetime
-        import time
-        s = datetime.datetime.strptime(result[0],' %d %b %Y %H:%M:%S')
-        return time.mktime(s.timetuple())
-    
+        datetime_str = result[0]
+        if datetime_str.find('-') == -1:
+            s = datetime.datetime.strptime(datetime_str,' %d %b %Y %H:%M:%S')
+            return time.mktime(s.timetuple())
+        else:
+            s = datetime.datetime.strptime(datetime_str,' %d-%b-%Y %H:%M:%S')
+            return time.mktime(s.timetuple())
 
 
-def validUrl(url):
-	content = f.read()
-	f.close()
-	pattern = re.compile('(((http|https)://)(([a-zA-Z0-9\._-]+\.[a-zA-Z]{2,6})|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,4})*(/[a-zA-Z0-9\&%_\./-~-]*)?)')
-	result = pattern.findall(content)
-	for match in result:
-		print match[0]
+def allowUrl(url):
+    pattern = re.compile('cc.sjtu.edu.cn')
+    result = pattern.search(url)
+    return (result == None)
+

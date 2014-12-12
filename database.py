@@ -14,5 +14,5 @@ def insertToMysql( url , code = 0  , head = "", content = "" , error = "" ):
 
 
 def getConn():
-	return MySQLdb.connect("localhost","root","root","sjtuso",charset='utf8' )
+	return MySQLdb.connect("so.rokiy.com","root","root","sjtuso",charset='utf8' )
 
