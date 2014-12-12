@@ -6,54 +6,67 @@ import time
 import database
 import socket
 
-def fetchSinglePage(url):
+def getRequest(url):
 	request = urllib2.Request(url) 
 	request.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36')
 	request.add_header('Referer', 'http://www.sjtu.edu.cn')
 	request.add_header('Accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8')
 	request.add_header('Accept-Language', 'en,zh-CN;q=0.8,zh;q=0.6')
 	request.add_header('Connection', 'keep-alive')
+	return request
 
+def getResponse(request):
+	
 	try:
 	    response = urllib2.urlopen(request, timeout=1)
 	except urllib2.HTTPError , e1:
-	    response_code = e1.code
-	    # code url head content error
-	    return (response_code ,  '' , '' , '')
+	    response = {
+		'code':e1.code, # like 404
+		'head':'',
+		'content':'',
+		'error_msg':''
+		}
 	except urllib2.URLError , e2:
-		print 'Connect Error',
-		return (0 , '' , '' , e2.reason)
+		response = {
+		'code':0 ,
+		'head':'',
+		'content':'',
+		'error_msg':'connect error'
+		}
 	except socket.timeout as e3:
-		print 'Connect Error',
-		return (0 , '' , '' , 'time out')
+		response = {
+		'code':0 ,
+		'head':'',
+		'content':'',
+		'error_msg':'time out'
+		}
 	else:
-		response_code = response.getcode() 
-		response_url = response.geturl()
-		response_head = response.info()
-		response_content = response.read()
-		int_code = int(response_code)
-		if int_code >= 300 and int_code < 400 :
-			# redirect
-			return (response_code ,  '' , '' , '' )
-		else :
-			return (response_code , response_head , response_content , '')
+		response = {
+		'code':response.getcode() ,
+		'head':response.info() ,
+		'content':response.read(),
+		'error_msg':''
+		}
+	return response
 
 
-def updateFetchData(url):
-	result = fetchSinglePage(url)
-	code = result[0]
-	head = result[1]
-	content = result[2]
-	error = result[3]
+def update(url, response):
+	if response['code'] == 200:
+		status = 1
+	else:
+		status = 10
+
 	sql = "UPDATE webpage SET code=%s , head=%s , content=%s , error=%s , fetch_time=%s , status=1 \
 		WHERE url = %s "
-	param = ( int(code) , head , content , error , int( time.time() ) , url)
+	
+	error_msg = response[3]
+	param = ( response['code'] , response['head'] , response['content'] , response['error_msg'] , time.time() , url)
 	conn = database.getConn()
 	cursor = conn.cursor()
-	res = cursor.execute(sql,param)
+	update_result = cursor.execute(sql,param)
 	cursor.close()
 	conn.close()
-	return res
+	return update_result
 
 
 def fetchAll(total = 100):
@@ -67,25 +80,30 @@ def fetchAll(total = 100):
 		param = ( 0 , total )
 	
 	cursor.execute(sql,param)
-	numrows = int(cursor.rowcount)
-	print 'Url waiting to fetch : %d'%(numrows)
-	if numrows == 0:
-		print 'No url waiting to fetch'
-	else:
+	numrows = cursor.rowcount
+	cnt_succ = 0
+	print 'Fetch - Url waiting to fetch : %d ...'%(numrows)
+	if numrows != 0:
 		rows = cursor.fetchall()
-		cnt_succ = 0
 		for row in rows:
 			url = row[0]
-			print url,
-			fetch_result = updateFetchData(url)
-			if fetch_result == 1:
-				print 'Ok'
-				cnt_succ += 1
+			request = getRequest(url)
+			response = getResponse(request)
+			if response['code'] == 200:
+				++cnt_succ
+				print 'fetch succ ',
 			else:
-				print 'fail'
-		print 'Summary : All:%s Succ:%s Fail:%s'%(numrows , cnt_succ , numrows - cnt_succ)
+				print 'fetch fail ',
+			print url
+			result = updateFetchData(url,response)
+			if result == 0:
+				print 'update error'
+			
+		
 	cursor.close()
 	conn.close()
+	print 'Summary : All:%s Succ:%s Fail:%s'%(numrows , cnt_succ , numrows - cnt_succ)
+	return {'all':numrows,'succ':cnt_succ,'fail':numrows - cnt_succ}
 
 import info
 info.showInfo()
