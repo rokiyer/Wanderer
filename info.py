@@ -26,5 +26,3 @@ def showInfo():
 
 	cursor.close()
 	conn.close()
-
-showInfo()
