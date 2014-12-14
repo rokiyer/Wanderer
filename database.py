@@ -12,7 +12,6 @@ def insertToMysql( url , code = 0  , head = "", content = "" , error = "" ):
 	cursor.execute(sql,param)
 	conn.close()
 
-
 def getConn():
 	return MySQLdb.connect("localhost","root","root","sjtuso",charset='utf8' )
 

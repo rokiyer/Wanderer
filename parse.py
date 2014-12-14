@@ -1,56 +1,121 @@
+#!C:\Python27\python
+# -*- coding: utf-8 -*-  
 import database
 import reg_tools
+import sys  
+reload(sys)  
+sys.setdefaultencoding('utf8')   
 
-def parseSinglePage(url):
+
+def parse(url):
 	if reg_tools.allowUrl(url) == False:
 		return 0
 
-	conn = database.getConn()
-	cursor = conn.cursor()
-	sql = "SELECT * FROM webpage WHERE url = %s"
-	param = (url)
-	cursor.execute(sql,param)
-	numrows = int(cursor.rowcount)
-	if(numrows == 0):
+	row = getRow(url)
+	if row == None:
 		return 0
-	row = cursor.fetchone()
-	content = row[4]
+
 	head = row[3]
-	# find out urls
+	content = row[4]
+	prev_modified_time = row[11]
+
 	title = reg_tools.findTitle(content)
-	outlinks = reg_tools.findUrls(content)
 	text = reg_tools.filter_tags(content)
+	outlinks = reg_tools.findUrls(content , url)
 	last_modify_time = reg_tools.findLastModifyTime(head)
 
-	sql = "UPDATE webpage SET status=2,title=%s,text=%s,outlinks=%s,modified_time=%s WHERE url=%s"
-	param = (title,text,outlinks,last_modify_time,url)
+	return {'title':title,'outlinks':outlinks,'text':text,'last_modify_time':last_modify_time,'prev_modified_time':prev_modified_time}
+
+def update(url,parse_result):
+	if parse_result == 0:
+		title = ''
+		text = ''
+		outlinks = ''
+		prev_modified_time = 0
+		last_modify_time = 0
+		status = 20
+	else:
+		title = parse_result['title']
+		text = parse_result['text']
+		outlinks = parse_result['outlinks']
+		prev_modified_time = parse_result['prev_modified_time']
+		last_modify_time = parse_result['last_modify_time']
+		status = 2
+
+	conn = database.getConn()
+	cursor = conn.cursor()
+	sql = "UPDATE `webpage` SET `status`=%s,`title`=%s,`text`=%s,`outlinks`=%s,\
+		`prev_modified_time`=%s,`modified_time`=%s WHERE `url`=%s"
+	param = (status,title,text,outlinks,prev_modified_time,last_modify_time,url)
 	result = cursor.execute(sql,param)
 	cursor.close()
 	conn.close()
 	return result
 
-	
-def parseAll():
-	print 'Start parse all fetched url ...'
+def getContent(url):
 	conn = database.getConn()
 	cursor = conn.cursor()
-	sql = "SELECT * FROM webpage WHERE status = 1"
-	cursor.execute(sql)
+	sql = "SELECT * FROM webpage WHERE url = %s"
+	param = (url)
+	cursor.execute(sql,param)
+	row = cursor.fetchone()
+	if row == None:
+		return 0
+	else:
+		return row[4]
+
+def getHead(url):
+	conn = database.getConn()
+	cursor = conn.cursor()
+	sql = "SELECT * FROM webpage WHERE url = %s"
+	param = (url)
+	cursor.execute(sql,param)
+	row = cursor.fetchone()
+	if row == None:
+		return 0
+	else:
+		return row[3]
+
+def getRow(url):
+	conn = database.getConn()
+	cursor = conn.cursor()
+	sql = "SELECT * FROM webpage WHERE url = %s"
+	param = (url)
+	cursor.execute(sql,param)
+	row = cursor.fetchone()
+	cursor.close()
+	conn.close()
+	return row
+	
+def parseAll(total = 100):
+	print 'Parse - Start... %s url'%(total)
+	if total == 'all':
+		sql = "SELECT url FROM webpage WHERE status = 1"
+		param = ()
+	else:
+		sql = "SELECT url FROM webpage WHERE status = 1 LIMIT %s"
+		param = (int(total))
+
+	conn = database.getConn()
+	cursor = conn.cursor()
+	cursor.execute(sql,param)
 	numrows = cursor.rowcount
 	if(numrows == 0):
-		print 'Summary : There is no url waiting to parse'
+		print 'Parse - Summary : All:0 Succ:0 Fail:0'
 		return 0
 	else:
 		cnt_succ = 0;
 		rows = cursor.fetchall()
 		for row in rows:
-			url = row[1]
-			result = parseSinglePage(url)
-			if result == 1 :
-				print "Succ:" + "Parse " + url
+			url = row[0]
+			print 'Parse - '+url,
+			parse_result = parse(url)
+			update(url,parse_result)
+			if parse_result == 0 :
+				print 'parse fail'
 			else:
-				print "Fail:" + "Parse " + url 
-		print 'Summary : All:%s Succ:%s Fail:%s'%(numrows , cnt_succ , numrows - cnt_succ)
+				cnt_succ += 1
+				print 'parse succ'
+		print 'Parse - Summary : All:%s Succ:%s Fail:%s'%(numrows , cnt_succ , numrows - cnt_succ)
+		return 1
 
-
-parseAll()

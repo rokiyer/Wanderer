@@ -7,10 +7,9 @@ import database
 import socket
 import chardet
 
-
 def getRequest(url):
 	# set time out = 5s
-	socket.setdefaulttimeout(5)
+	socket.setdefaulttimeout(30)
 
 	request = urllib2.Request(url) 
 	request.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36')
@@ -76,7 +75,7 @@ def getResponse(request):
 			index = content_type.rindex('=')
 			charset = content_type[index+1:index+len(content_type)]
 
-		if pageset != 'text/html':
+		if pageset != 'text/html' :
 			result = {
 			'code':code,
 			'head':head,
@@ -138,46 +137,6 @@ def update(url, response):
 	conn.close()
 	return update_result
 
-
-def fetchAll(total = 100):
-	conn = database.getConn()
-	cursor = conn.cursor()
-	if total == 'all':
-		sql = "SELECT url FROM webpage WHERE status = %s "
-		param = ( 0 )
-	else:
-		sql = "SELECT url FROM webpage WHERE status = %s LIMIT %s"
-		param = ( 0 , total )
-	
-	cursor.execute(sql,param)
-	numrows = cursor.rowcount
-	cnt_succ = 0
-	print 'Fetch - Url waiting to fetch : %d ...'%(numrows)
-	if numrows != 0:
-		rows = cursor.fetchall()
-		for row in rows:
-			url = row[0]
-			print url,
-			request = getRequest(url)
-			response = getResponse(request)
-			result = update(url,response)
-
-			if response['code'] == 200 and response['error_msg'] == '':
-				cnt_succ += 1
-				print 'fetch succ ',
-			else:
-				print 'fetch fail ',
-			
-			if result:
-				print 'update succ'
-			else:
-				print 'update fail'
-
-	cursor.close()
-	conn.close()
-	print 'Summary : All:%s Succ:%s Fail:%s'%(numrows , cnt_succ , numrows - cnt_succ)
-	return {'all':numrows,'succ':cnt_succ,'fail':numrows - cnt_succ}
-
 def fetchSingle(url):
 	conn = database.getConn()
 	cursor = conn.cursor()
@@ -196,18 +155,43 @@ def fetchSingle(url):
 
 		if response['code'] == 200 and response['error_msg'] == '':
 			cnt_succ += 1
-			print 'fetch succ ',
+			print 'fetch succ '
 		else:
-			print 'fetch fail ',
+			print 'fetch fail '
 		
-		if result:
-			print 'update succ'
-		else:
-			print 'update fail'
 		return True
 
+def fetchAll(total = 100):
+	print 'Fetch - Start... %s urls'%(total)
+	conn = database.getConn()
+	cursor = conn.cursor()
+	if total == 'all':
+		sql = "SELECT url FROM webpage WHERE status = %s "
+		param = ( 0 )
+	else:
+		sql = "SELECT url FROM webpage WHERE status = %s LIMIT %s"
+		param = ( 0 , total )
+	
+	cursor.execute(sql,param)
+	numrows = cursor.rowcount
+	cnt_succ = 0
+	if numrows != 0:
+		rows = cursor.fetchall()
+		for row in rows:
+			url = row[0]
+			print 'Fetch - '+url,
+			request = getRequest(url)
+			response = getResponse(request)
+			update(url,response)
 
-fetchAll('all')
-# fetchSingle('http://file.scc.sjtu.edu.cn/img/201409/42531df095e145a995efbcfdda3b68c6.jpg')
+			if response['code'] == 200 and response['error_msg'] == '':
+				cnt_succ += 1
+				print 'fetch succ '
+			else:
+				print 'fetch fail '
 
+	cursor.close()
+	conn.close()
+	print 'Fetch - Summary : All:%s Succ:%s Fail:%s'%(numrows , cnt_succ , numrows - cnt_succ)
+	return {'all':numrows,'succ':cnt_succ,'fail':numrows - cnt_succ}
 

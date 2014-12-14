@@ -12,12 +12,22 @@ def showInfo():
 	sql = 'SELECT * FROM webpage WHERE status = 1'
 	res = cursor.execute(sql)
 	numrows = cursor.rowcount
-	print 'fetched/unparsed : %s'%(numrows)
+	print 'fetched/unparsed : %s'%(numrows),
+
+	sql = 'SELECT * FROM webpage WHERE status = 10'
+	res = cursor.execute(sql)
+	numrows = cursor.rowcount
+	print 'error : %s'%(numrows)
 
 	sql = 'SELECT * FROM webpage WHERE status = 2'
 	res = cursor.execute(sql)
 	numrows = cursor.rowcount
-	print 'parsed/ungenerated : %s'%(numrows)
+	print 'parsed/ungenerated : %s'%(numrows),
+
+	sql = 'SELECT * FROM webpage WHERE status = 20'
+	res = cursor.execute(sql)
+	numrows = cursor.rowcount
+	print 'error : %s'%(numrows)
 
 	sql = 'SELECT * FROM webpage WHERE status = 3'
 	res = cursor.execute(sql)
@@ -26,3 +36,5 @@ def showInfo():
 
 	cursor.close()
 	conn.close()
+
+showInfo()

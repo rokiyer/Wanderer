@@ -1,83 +1,453 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!doctype html><HTML class=" js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio localstorage sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths js no-flexbox no-canvas no-canvastext no-webgl no-touch no-geolocation no-postmessage no-websqldatabase no-indexeddb no-hashchange no-history draganddrop no-websockets no-rgba no-hsla no-multiplebgs no-backgroundsize no-borderimage no-borderradius no-boxshadow no-textshadow no-opacity no-cssanimations no-csscolumns no-cssgradients no-cssreflections no-csstransforms no-csstransforms3d no-csstransitions fontface no-video no-audio no-localstorage no-sessionstorage no-webworkers no-applicationcache no-svg no-inlinesvg no-smil no-svgclippaths"><HEAD>
-<STYLE type="text/css">@font-face {
-    font-family: font;}
-</STYLE>
-<TITLE>ÉÏº£½»Í¨´óÑ§</TITLE>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>ä¸Šæµ·äº¤å¤§æ ¡é•¿å¼ æ°åº”é‚€ä¸ºä¸­ç§‘å¤§ä¸­å±‚å¹²éƒ¨ä½œä¸“é¢˜è¾…å¯¼æŠ¥å‘Š[å›¾]-ä¸Šæµ·äº¤é€šå¤§å­¦æ–°é—»ç½‘</TITLE>
 
 
 
 
-<STYLE type="text/css">@font-face {
-    font-family: font;}
-</STYLE>
-
-<STYLE type="text/css">@font-face {
-    font-family: font;}
+<META content="text/html; charset=UTF-8" http-equiv="Content-Type"><LINK rel="stylesheet" type="text/css" href="../../images/css.css">
+<META name="GENERATOR" content="MSHTML 8.00.7600.16671">
+<STYLE>
+<!--
+a{text-decoration:none;}
+-->
 </STYLE>
 
-<STYLE type="text/css">@font-face {
-    font-family: font;}
-</STYLE>
 
-<STYLE type="text/css">@font-face {
-    font-family: font;}
-</STYLE>
-
-<STYLE type="text/css">@font-face {
-    font-family: font;}
-</STYLE>
-<script src="js/iepng.js" type="text/javascript"></script><script type="text/javascript">
-   EvPNG.fix('div, ul, img, li, input, h1');  //EvPNG.fix('°üº¬Í¸Ã÷PNGÍ¼Æ¬µÄ±êÇ©'); ¶à¸ö±êÇ©Ö®¼äÓÃÓ¢ÎÄ¶ººÅ¸ô¿ª¡£
-</script>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8"><LINK href="style/css.css" type="text/css" rel="stylesheet"><script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script><LINK href="SpryAssets/SpryTabbedPanels.css" type="text/css" rel="stylesheet"><LINK href="css/lrtk.css" type="text/css" rel="stylesheet"><script type="text/javascript" src="js/pptBox.js"></script>
-<META http-equiv="X-UA-Compatible" content="IE=9">
-<META http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
-
-<!--Announced at 2014-12-10 14:05:06-->
-<link rel="stylesheet" type="text/css" href="index.vsb.css" />
-<META Name="keywords" Content="ÉÏº£½»Í¨´óÑ§" />
-<script type="text/javascript" src="system/resource/js/counter.js"></script>
-<script type="text/javascript">_jsq_(1001,'/index.jsp',-1,965815885)</script>
+<!--Announced at 2014-12-12 15:10:40-->
+<link rel="stylesheet" type="text/css" href="../../content.vsb.css" />
+<META Name="keywords" Content="ä¸Šæµ·äº¤é€šå¤§å­¦æ–°é—»ç½‘" />
+<script type="text/javascript" src="../../system/resource/js/counter.js"></script>
+<script type="text/javascript">_jsq_(1002,'/content.jsp',396831,741155814)</script>
 </HEAD>
-<BODY><!-----banner----->
-<DIV id="top">
-<DIV style="margin-left: auto;width: 1030px;margin-right: auto">
-<DIV class="juzhong" style="height: 32px">
-<DIV id="dbzdq" style="font-size: 14px;text-indent: 20px"><!--#begineditable clone="0" namechanged="0" order="0" ispublic="0" tagname="µÇÂ¼Èë¿Ú" viewid="51024" contype="" stylesysid="" layout="" action="" name="µÇÂ¼Èë¿Ú"-->    <a href="xbdh/yhdl/xs.htm" title="ÔÚĞ£Éú" style="color:#ffffff">ÔÚĞ£Éú</a>
-    ¡¡
-    <a href="xbdh/yhdl/jzg.htm" title="½ÌÖ°¹¤" style="color:#ffffff">½ÌÖ°¹¤</a>
-    ¡¡
-    <a href="xbdh/yhdl/xiaoyou.htm" title="Ğ£ÓÑ" style="color:#ffffff">Ğ£ÓÑ</a>
-    ¡¡
-    <a href="xbdh/yhdl/ksjfk.htm" title="¿¼Éú¼°·Ã¿Í" style="color:#ffffff">¿¼Éú¼°·Ã¿Í</a>
+<BODY style="text-align: center"><script language="javascript" type="text/javascript">
+function changeimages(str1,str2)
+{
+str1.src=str2;
+}
+</script><script language="JavaScript"> 
+function doZoom(size){ 
+    document.getElementById('zoom').style.fontSize=size+'px' 
+} 
+</script>
+<TABLE border="0" cellspacing="0" cellpadding="0" width="1000" align="center">
+<TBODY>
+<TR>
+<TD valign="top" align="center"><IMG border="0" src="../../images/top1.jpg" width="1000" height="130" usemap="#Map"></TD></TR></TBODY></TABLE>
+<TABLE border="0" cellspacing="0" cellpadding="0" width="1000" bgcolor="#716f70" align="center" height="48">
+<TBODY>
+<TR>
+<TD valign="middle" width="220" align="left">
+<TABLE border="0" cellspacing="0" cellpadding="0" width="120">
+<TBODY>
+<TR>
+<TD valign="middle" width="143" align="left"></TD>
+<TD valign="middle" width="8" align="left"><IMG alt="" src="../../images/index_65.jpg" width="8" height="8"></TD>
+<TD valign="middle" width="70" align="left"><A href="http://www.sjtu.edu.cn/" target="_blank"><IMG border="0" src="../../images/index1_47.jpg" width="70" height="20" onmouseout="changeimages(this,'http://news.sjtu.edu.cn/images/index1_47.jpg')" onmouseover="changeimages(this,'http://news.sjtu.edu.cn/images/index_47.jpg')"></A></TD>
+<TD valign="middle" width="4" align="left"></TD></TR></TBODY></TABLE></TD>
+<TD valign="middle" width="500" align="left"><!--#begineditable contype="" name="ç½‘ç«™å¯¼èˆª" action="" layout="" clone="0" namechanged="0" order="0" ispublic="0" tagname="ç½‘ç«™å¯¼èˆª" viewid="1899" stylesysid=""--><table width="756" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../jdyw.htm"><img src="http://news.sjtu.edu.cn/images/index1_1.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_1.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_1.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../jdkx.htm"><img src="http://news.sjtu.edu.cn/images/index1_2.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_2.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_2.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../ldhd.htm"><img src="http://news.sjtu.edu.cn/images/index1_3.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_3.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_3.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../ldjh.htm"><img src="http://news.sjtu.edu.cn/images/index1_4.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_4.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_4.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../mtjj.htm"><img src="http://news.sjtu.edu.cn/images/index1_5.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_5.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_5.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../jdrw.htm"><img src="http://news.sjtu.edu.cn/images/index1_6.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_6.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_6.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../xsdt.htm"><img src="http://news.sjtu.edu.cn/images/index1_7.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_7.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_7.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../jxxx.htm"><img src="http://news.sjtu.edu.cn/images/index1_8.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_8.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_8.jpg')" /></a></td>
+</tr><tr>
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../jjxy.htm"><img src="http://news.sjtu.edu.cn/images/index1_9.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_9.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_9.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../yxcz.htm"><img src="http://news.sjtu.edu.cn/images/index1_10.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_10.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_10.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../tpxw.htm"><img src="http://news.sjtu.edu.cn/images/index1_11.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_11.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_11.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../ztbd.htm"><img src="http://news.sjtu.edu.cn/images/index1_12.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_12.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_12.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="http://shjdb.sjtu.edu.cn"><img src="http://news.sjtu.edu.cn/images/index1_13.jpg" width="82" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_13.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_13.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../gjsd.htm"><img src="http://news.sjtu.edu.cn/images/index1_14.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_14.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_14.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="http://vod.sjtu.edu.cn/news.asp"><img src="http://news.sjtu.edu.cn/images/index1_15.jpg" width="70" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_15.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_15.jpg')" /></a></td>
+
+        <td width="1" align="left" class="font12ffffff paddingtop3">Â·</td>
+        <td width="87" align="left" valign="middle"><a href="../../#"><img src="http://news.sjtu.edu.cn/images/index1_16.jpg" width="82" height="20" border="0" onMouseOver="changeimages(this,'http://news.sjtu.edu.cn/images/index_16.jpg')" onMouseOut="changeimages(this,'http://news.sjtu.edu.cn/images/index1_16.jpg')" /></a></td>
+
+
+      </tr>
+</table><!--#endeditable--></TD></TR></TBODY></TABLE><MAP id="Map" name="Map"><AREA href="http://news.sjtu.edu.cn" shape="RECT" coords="24,29,376,106"></MAP>
+<TABLE border="0" cellspacing="0" cellpadding="0" width="1000" align="center">
+<TBODY>
+<TR bgcolor="#ffffff">
+<TD height="1"></TD>
+<TD height="1"></TD>
+<TD height="1"></TD></TR>
+<TR>
+<TD bgcolor="#eaeaec" height="3" width="771"></TD>
+<TD bgcolor="#949494" width="1"></TD>
+<TD bgcolor="#949494" height="3" width="228"></TD></TR>
+<TR>
+<TD valign="top" align="left">
+<TABLE border="0" cellspacing="0" cellpadding="0">
+<TBODY>
+<TR>
+<TD></TD>
+<TD height="40" valign="middle" align="left">
+<TABLE border="0" cellspacing="0" cellpadding="0" width="100%">
+<TBODY>
+<TR>
+<TD class="fon9" height="16" valign="middle" align="left"><!--#begineditable contype="" name="å½“å‰ä½ç½®" action="" layout="" clone="0" namechanged="0" order="1" ispublic="0" tagname="å½“å‰ä½ç½®" viewid="1332" stylesysid=""-->  
+<table class="winstyle1332" cellspacing="0" cellpadding="0"><tr><td nowrap>å½“å‰ä½ç½®ï¼š    
+<a href="../../index.htm"><span class="fontstyle1332">ä¸Šæµ·äº¤é€šå¤§å­¦æ–°é—»ç½‘</span></a><span class="splitflagstyle1332"> > </span><a href="../../jdyw.htm"><span class="fontstyle1332">äº¤å¤§è¦é—»</span></a><span class="splitflagstyle1332"> > </span><span class="fontstyle1332">æ­£æ–‡</span></td></tr></table><!--#endeditable--></TD></TR></TBODY></TABLE></TD>
+<TD></TD></TR>
+<TR>
+<TD width="53"></TD>
+<TD valign="top" align="center">
+<TABLE border="0" cellspacing="0" cellpadding="0" width="631">
+<TBODY>
+<TR>
+<TD valign="top" align="center"><!--#begineditable contype="" name="æ–‡ç« å†…å®¹" action="" layout="" clone="0" namechanged="0" order="2" ispublic="0" tagname="æ–‡ç« å†…å®¹" viewid="1366" stylesysid=""--><LINK href="../../system/resource/style/component/news/content/title.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+     .content{margin:auto;text-align:left;line-height:18px;padding:3px 0 0 0;color:#727272;}
+     .process{width:162px;height:11px;background:#EDEDED;overflow:hidden;float:left;margin-left:26px !important;margin-left:13px;margin-right:10px;}
+     .process div{width:160px;height:11px;background:url(../../system/resource/images/newsvote/bg.gif) repeat-x;border-left:1px solid #000;border-right:1px solid #000;}
+     .process .style7{border-left-color:#ff0000;border-right-color:#ff0000;background-position:0 -77px;}
+</style>
+<script language="javascript" src="../../_dwr/interface/NewsvoteDWR.js"></script>
+<script language="javascript" src="../../_dwr/engine.js"></script>
+<script language="javascript" src="../../_dwr/util.js"></script>
+<script language="javascript" src="../../system/resource/js/news/newscontent.js"></script>
+
+<form name="form1366a" method="post">
+<input type="hidden" name="actiontype">
+<table border="0" class="winstyle1366" width="100%" cellspacing="0" cellpadding="0" style="WORD-BREAK: break-all;WORD-WRAP: break-word">
+
+      <tr><td class="titlestyle1366" align="center">
+            ä¸Šæµ·äº¤å¤§æ ¡é•¿å¼ æ°åº”é‚€ä¸ºä¸­ç§‘å¤§ä¸­å±‚å¹²éƒ¨ä½œä¸“é¢˜è¾…å¯¼æŠ¥å‘Š[å›¾]
+      </td></tr>
+      <tr height="30"><td align="center">
+            <span class="zxcontentstyle1366">
+                [<font class="zxfontstyle1366">å‘å¸ƒæ—¶é—´</font>]: 2014å¹´12æœˆ11æ—¥</span>
+        </td></tr>
+        
+        <tr height="50"><td>
+            <table border="0" width="100%" height="40" bgcolor="#e6e7ec" style="border-top:1px solid #b3bcc5">
+                <tr><td> <span class="zxcontentstyle1366">
+                            [<a href="javascript:recommandnewsa1366a()" class="zxfontstyle1366">æ¨èæ–°é—»</a>] &nbsp;&nbsp;&nbsp;&nbsp;[<a href="mailto:news@sjtu.edu.cn" class="zxfontstyle1366">æˆ‘è¦çº é”™</a>]</td><td width="50%"></span></td>
+                <td> <span class="zxcontentstyle1366">
+                            å­—å·ï¼š[<a href="javascript:doZoom1366(16)" class="zxfontstyle1366">å¤§</a> <a href="javascript:doZoom1366(14)" class="zxfontstyle1366">ä¸­</a> <a href="javascript:doZoom1366(12)" class="zxfontstyle1366">å°</a>]
+                     </span>
+                 </td></tr>
+            </table>
+        </td></tr>
+        <tr height="30"><td align="right">
+           <span class="zxcontentstyle1366"> [<font class="zxfontstyle1366">è´£ä»»ç¼–è¾‘</font>]: å­™ä½³</span>
+        </td></tr>
+
+
+
+          <tr><td class="contentstyle1366">
+        <div id="vsb_content" style="word-break:break-all;overflow:auto;width:100%">
+           <P>ã€€ã€€12æœˆ10æ—¥ä¸‹åˆï¼Œåº”ä¸­å›½ç§‘æŠ€å¤§å­¦é‚€è¯·ï¼Œä¸Šæµ·äº¤é€šå¤§å­¦æ ¡é•¿ã€ä¸­ç§‘é™¢é™¢å£«å¼ æ°åœ¨ä¸­ç§‘å¤§å¸ˆç”Ÿæ´»åŠ¨ä¸­å¿ƒä¸ºå…¨æ ¡ä¸­å±‚å¹²éƒ¨ä½œä¸“é¢˜è¾…å¯¼æŠ¥å‘Šã€‚ä¸­ç§‘å¤§æ ¡é•¿ä¾¯å»ºå›½ä¸»æŒæŠ¥å‘Šä¼šã€‚</P>
+<P align="center"><IMG border="0" align="middle" src="../../_mediafile/newsnet/2014/12/11/5oay5jl533.jpg" width="600"></P>
+<P>ã€€ã€€åœ¨æŠ¥å‘Šä¸­ï¼Œå¼ æ°ä»å­¦æ ¡å‘å±•ç†å¿µã€å¸ˆèµ„é˜Ÿä¼æ”¹é©ã€åˆ›æ–°èƒ½åŠ›æå‡ä¸‰ä¸ªæ–¹é¢é˜è¿°äº†â€œæ„å»ºç°ä»£å¤§å­¦æ²»ç†ä½“ç³»çš„ç†å¿µä¸å®è·µâ€ã€‚</P>
+<P align="center"><IMG border="0" align="middle" src="../../_mediafile/newsnet/2014/12/11/2wdt3z8542.jpg"></P>
+<P>ã€€ã€€åœ¨åˆ†äº«å­¦æ ¡å‘å±•ç†å¿µæ—¶ï¼Œå¼ æ°ç®€è¦ä»‹ç»äº†ä¸Šæµ·äº¤é€šå¤§å­¦â€œå› å›¾å¼ºè€Œç”Ÿã€å› æ”¹é©è€Œå…´ã€å› äººæ‰è€Œç››â€çš„å‘å±•å†ç¨‹ã€‚è°ˆåˆ°å¤§å­¦ä¸ç¤¾ä¼šçš„å…³ç³»ï¼Œå¼ æ°æŒ‡å‡ºï¼Œä¸­å›½ç»æµç¤¾ä¼šå‘å±•æ­£é¢ä¸´è½¬å‹ï¼Œè½¬å‹æˆåŠŸçš„å…³é”®åœ¨äºé©±åŠ¨åŠ›çš„è½¬å‹ã€‚åœ¨è¿™ä¸€è¿‡ç¨‹ä¸­ï¼Œå¤§å­¦è¦æˆä¸ºä¸­å›½ç»æµç¤¾ä¼šå‘å±•çš„åˆ›æ–°å¼•æ“å’Œæºæ³‰ã€‚å¤§å­¦ä½œç”¨äºç¤¾ä¼šçš„å…³é”®åœ¨äºåˆ›æ–°ã€‚ä¸­å›½ç ”ç©¶å‹å¤§å­¦çš„å†å²ä½¿å‘½å°±æ˜¯ä¸ºç¤¾ä¼šåŸ¹å…»åˆ›æ–°å‹äººæ‰ï¼Œæ¨åŠ¨ç§‘å­¦æŠ€æœ¯åˆ›æ–°å’Œæ€æƒ³æ–‡åŒ–åˆ›æ–°ã€‚å¼ æ°ä¸å¤§å®¶åˆ†äº«äº†ä¸Šæµ·äº¤é€šå¤§å­¦â€œ3+3+1â€çš„å‘å±•ç†å¿µï¼Œå³æ„å»ºå“è¶Šåˆ›æ–°äººæ‰æˆé•¿ä½“ç³»ã€å“è¶Šç§‘å­¦æŠ€æœ¯åˆ›æ–°ä½“ç³»å’Œå“è¶Šæ€æƒ³æ–‡åŒ–åˆ›æ–°ä½“ç³»â€œä¸‰å¤§å“è¶Šåˆ›æ–°ä½“ç³»â€ï¼Œå®ç°â€œç”±è¡Œæ”¿ä¸»å¯¼å‘å­¦æœ¯ä¸»å¯¼è½¬å˜â€ã€ç”±â€œæ ¡åŠé™¢â€å‘â€œé™¢åŠæ ¡â€è½¬å˜ã€â€œç”±å­¦æ ¡ä¸»å¯¼å‘å±•å‘å¸ˆç”Ÿè‡ªæˆ‘å®ç°è½¬å˜â€â€œä¸‰å¤§è½¬å˜â€ã€‚å¼ æ°è¡¨ç¤ºï¼Œè¦æ„å»ºå“è¶Šçš„â€œä¸‰å¤§åˆ›æ–°ä½“ç³»â€å’Œå®ç°â€œä¸‰å¤§è½¬å˜â€ï¼Œå¿…é¡»å®Œå–„ä»¥åˆ¶åº¦æ¿€åŠ±ä¸ºä¸»çº¿çš„å¤§å­¦æ²»ç†ï¼Œå®ç°å¤§å­¦çš„å†…ç”Ÿé©±åŠ¨å‘å±•ã€‚</P>
+<P>ã€€ã€€2014å¹´10æœˆ16æ—¥ï¼Œå¼ æ°åº”é‚€åœ¨ã€ŠNatureã€‹æ’°å†™ä¸“æ–‡ä»‹ç»äº†äº¤å¤§çš„æ”¹é©ï¼Œå¼ æ°åœ¨æŠ¥å‘Šä¸­åˆ†äº«äº†â€œå¼•è‚²å¹¶ä¸¾â€ã€â€œåˆ†ç±»å‘å±•â€ã€â€œå¹¶è½¨è¿è¡Œâ€çš„å¸ˆèµ„é˜Ÿä¼æ”¹é©â€œä¸‰æ­¥èµ°â€æˆ˜ç•¥ï¼Œä»‹ç»äº†æ”¹é©çš„æ€»ä½“æ€è·¯ã€åˆ†ç±»å‘å±•æ”¹é©çš„ç‰¹ç‚¹ã€ä¸­æœŸæ£€æŸ¥æƒ…å†µå’Œæ”¹é©æˆæ•ˆã€‚å¼ æ°æŒ‡å‡ºï¼Œé€šè¿‡å®æ–½â€œä¸‰æ­¥èµ°â€æˆ˜ç•¥ï¼Œä¸Šæµ·äº¤é€šå¤§å­¦åŸºæœ¬å½¢æˆäº†ç¬¦åˆä¸–ç•Œä¸€æµå¤§å­¦ç‰¹å¾çš„å¸ˆèµ„é˜Ÿä¼ç»“æ„å’Œå­¦æœ¯è¿½æ±‚çš„åˆ›æ–°ä»·å€¼å¯¼å‘ï¼Œå¹¶åœ¨è¾ƒçŸ­æ—¶é—´å†…è¿…é€Ÿå£®å¤§äº†é«˜å±‚æ¬¡äººæ‰é˜Ÿä¼è§„æ¨¡ã€‚åˆ†ç±»å‘å±•é€æ­¥æˆä¸ºå¸ˆèµ„é˜Ÿä¼çš„è‡ªè§‰è¿½æ±‚ï¼Œæ•™å¸ˆçš„åˆ›æ–°æ´»åŠ›å¾—ä»¥å¤§å¹…æå‡ï¼Œä¸ºé•¿è˜ä½“ç³»ã€ä¸“èŒç§‘ç ”é˜Ÿä¼ä½“ç³»å’Œæ–‡å‘˜ä½“ç³»ç­‰æ–°æœºåˆ¶ä½“åˆ¶çš„å»ºç«‹å’Œå®æ–½å¥ å®šäº†åšå®çš„åŸºç¡€ï¼Œæ¨åŠ¨äº†å­¦æ ¡ç²¾ç»†åŒ–ç®¡ç†çš„è¿›ç¨‹ï¼Œä¸ºå­¦æ ¡ä»â€œç›®æ ‡ç®¡ç†â€å‘â€œç»©æ•ˆç®¡ç†â€çš„è½¬å˜å¥ å®šäº†åŸºç¡€ã€‚</P>
+<P>ã€€ã€€é€šè¿‡åˆ—ä¸¾æš—ç‰©è´¨æš—èƒ½é‡æ¢æµ‹ã€æ°´æ²»ç†ã€ä¸œäº¬å®¡åˆ¤ç ”ç©¶ã€æµ·æ´‹å‘å±•æˆ˜ç•¥ç ”ç©¶ã€ä¸­å›½å—æµ·æˆ˜ç•¥æœ€å‰æ²¿ã€é«˜æ–°èˆ¹èˆ¶ä¸æ·±æµ·å¼€å‘è£…å¤‡ç ”ç©¶ç­‰10ä¸ªäº‹ä¾‹ï¼Œå¼ æ°ä»‹ç»äº†ä¸Šæµ·äº¤å¤§åœ¨ç§‘å­¦å‰æ²¿ã€å›½å®¶æˆ˜ç•¥ã€ç©ºé—´ã€æµ·æ´‹ã€äººç±»å¥åº·ã€é«˜ç«¯åˆ¶é€ ã€æ–°ææ–™ã€æ–°èƒ½æºã€ä¿¡æ¯æŠ€æœ¯ç­‰æ–¹é¢çš„åˆ›æ–°èƒ½åŠ›æå‡çš„è¡¨ç°ã€‚</P>
+<P>ã€€ã€€å¼ æ°æ€»ç»“å¼ºè°ƒï¼Œå¤§å­¦æ²»ç†çš„æ ¸å¿ƒåœ¨äºæ¿€å‘å¸ˆç”Ÿçš„åˆ›æ–°æ´»åŠ›ã€‚åˆ¶åº¦æ¿€åŠ±çš„æ ¸å¿ƒæ˜¯è¦å°†å¸ˆç”Ÿçš„è¿½æ±‚ä¸å­¦æ ¡çš„æ„¿æ™¯ç´§å¯†å…³è”ï¼Œè®©ç®¡ç†äººå‘˜æœ‰å……åˆ†çš„æˆå°±æ„Ÿã€æ•™å¸ˆæœ‰å……åˆ†çš„å°Šä¸¥æ„Ÿã€å­¦ç”Ÿæœ‰å……åˆ†çš„è‡ªè±ªæ„Ÿã€‚å¤§å­¦ç®¡ç†å·¥ä½œçš„æ ¹æœ¬ä»»åŠ¡åœ¨äºä¸ºä¸­å¿ƒå·¥ä½œæä¾›æœåŠ¡ï¼Œä½œä¸ºå¤§å­¦çš„ç®¡ç†è€…ï¼Œè¦åœ¨ç®¡ç†æ€æƒ³ä¸Šå®ç°ä»ç»éªŒç®¡ç†å‘ç§‘å­¦ç®¡ç†ï¼Œæœ€ç»ˆå‘æ–‡åŒ–ç®¡ç†çš„è½¬å˜ã€‚</P>
+<P>ã€€ã€€åœ¨æŠ¥å‘Šä¼šæœ€åï¼Œå¼ æ°åˆ†äº«äº†ä¸Šæµ·äº¤é€šå¤§å­¦çš„å‘å±•æˆ˜ç•¥å’Œäº¤é€šå¤§å­¦2020æ„¿æ™¯ï¼Œä»–å‘Šè¯‰å¤§å®¶ï¼Œé¢å‘æœªæ¥ï¼Œä¸Šæµ·äº¤é€šå¤§å­¦è¦åšçš„å°±æ˜¯å¢å¼ºæ–‡åŒ–è®¤åŒæ„Ÿã€æƒ…æ„Ÿå½’å±æ„Ÿå’Œå¿ƒçµæ„‰æ‚¦æ„Ÿï¼Œè®©è¿‘è€…æ‚¦è€Œå°½æ‰ï¼Œè¿œè€…æœ›é£è€Œæ…•ã€‚ä¸Šæµ·äº¤å¤§2020å¹´çš„å»ºè®¾ç›®æ ‡æ˜¯è·»èº«ä¸–ç•Œä¸€æµå¤§å­¦è¡Œåˆ—ï¼Œæˆä¸ºä¸€æ‰€äººæ‰è¾ˆå‡ºã€å¤§å¸ˆæ±‡èšã€å­¦æœ¯å“è¶Šã€å£°èª‰å“è‘—ã€åˆ¶åº¦è§„èŒƒã€æ–‡åŒ–å…ˆè¿›çš„ä¸–ç•Œä¸€æµå¤§å­¦ã€‚</P>
+<P align="center"><IMG border="0" align="middle" src="../../_mediafile/newsnet/2014/12/11/2vktfsu536.jpg"></P>
+<P>ã€€ã€€æŠ¥å‘Šç»“æŸåï¼Œå¼ æ°è¿˜å°±ä¸­ç§‘å¤§ä¸­å±‚å¹²éƒ¨æ¯”è¾ƒå…³æ³¨çš„å­¦ç§‘å‘å±•ã€ç®¡ç†æ”¹é©ã€äººæ‰åŸ¹å…»ç­‰è¯é¢˜è¿›è¡Œäº†äº¤æµã€‚</P>
+<P>ã€€ã€€ä¾¯å»ºå›½åœ¨æ€»ç»“è®²è¯ä¸­æ„Ÿè°¢å¼ æ°æ ¡é•¿ä¸ºç§‘å¤§ä¸­å±‚å¹²éƒ¨ä½œè¾…å¯¼æŠ¥å‘Šï¼Œå¹¶å°±å¤§å®¶å…³å¿ƒçš„é—®é¢˜ä½œäº¤æµã€‚ä¾¯å»ºå›½è¡¨ç¤ºï¼Œä¸Šæµ·äº¤é€šå¤§å­¦åœ¨åˆ›å»ºä¸–ç•Œä¸€æµå¤§å­¦çš„è¿‡ç¨‹ä¸­ï¼Œé€šè¿‡åˆ¶åº¦çš„æ”¹é©å’Œåˆ›æ–°æ¨åŠ¨äº†å¤§å­¦çš„å‘å±•ã€‚è¿™äº›ç»éªŒã€è¿‡ç¨‹å’Œå®ç°ç†å¿µï¼Œå¯¹ä¸­ç§‘å¤§æœªæ¥çš„å·¥ä½œå’Œå‘å±•éå¸¸æœ‰å¯å‘ã€‚å¸Œæœ›å…¨æ ¡ä¸­å±‚å¹²éƒ¨ç»“åˆå²—ä½å·¥ä½œå’Œç§‘å¤§å®é™…ï¼Œè®¤çœŸå­¦ä¹ å’Œä½“ä¼šå¼ æ°æ ¡é•¿æŠ¥å‘Šä¸­çš„æ€æƒ³ã€ç†å¿µä»¥åŠä¸Šæµ·äº¤é€šå¤§å­¦çš„ç»éªŒï¼Œåœ¨ä»Šåå·¥ä½œä¸­ä¸æ–­åˆ›æ–°æ€è·¯å’Œæ–¹æ³•ï¼Œæ›´å¥½åœ°æ¨åŠ¨å­¦æ ¡å„é¡¹å·¥ä½œçš„å‘å±•ã€‚</P>
+</div>
+        </td></tr>
+        <tr><td class="pagestyle1366" align="left">
+        </td></tr>
+        <tr><td><div id="div_vote_id"></div></td></tr>
+    <tr><td align="left"><span>
+             
+      </span></td></tr>
+      <tr>
+         <td align="center">
+            
+         </td>
+      </tr>
+     <tr>
+         <td align="right">
+            <span class="zxcontentstyle1366" style="line-height:200%">
+            [<font class="zxfontstyle1366">ä½œè€…</font>]: æ›¹æ°&nbsp;<br>
+            [<font class="zxfontstyle1366">æ‘„å½±</font>]: æ›¹æ°  <br>
+            [<font class="zxfontstyle1366">ä¾›ç¨¿å•ä½</font>]: 
+            </span>
+         </td>
+      </tr>
+      <tr>
+         <td align="center">
+            <table border="0" width="100%" height="60" bgcolor="#f5f6fa" cellpadding="0" cellspacing="0">
+                <tr><td bgcolor="#e6e7ec" width="120">
+                <span class="zxcontentstyle1366">
+                 [<font class="zxfontstyle1366">é˜…è¯»</font>]:<script language="javascript" src="../../system/resource/js/prototype.js"></script><script language="javascript" src="../../system/resource/js/ajax.js"></script><span id="n396809"></span><script language="javascript">getClickTimes('396809','741155814','wbnews','')</script> äººæ¬¡</span></td>
+                <td rowspan="2" align="center">
+                  <span class="zxcontentstyle1366">
+                    [<a href="javascript:recommandnewsa1366a()" class="zxfontstyle1366">æ¨èæ–°é—»</a>] &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    [<a href="mailto:news@sjtu.edu.cn" class="zxfontstyle1366">æˆ‘è¦çº é”™</a>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     [<a href="javascript:window.opener=null;window.open('','_self');window.close();" class="zxfontstyle1366">å…³é—­çª—å£</a>]
+                  </span>
+                </td></tr>
+                <tr><td bgcolor="#e6e7ec"><span class="zxcontentstyle1366"> 
+                [<font class="zxfontstyle1366">æ¨è</font>]: <span id="recommandspan1366"></span> äººæ¬¡</span></td></tr>
+
+            </table>
+
+
+         </td>
+      </tr>
+ 
+
+      <tr><td align="right">
+      </td></tr>
+
+</table>
+</form>
+<script language="javascript">
+ function doZoom1366(size)
+ {
+   if(size==16)
+  document.getElementById("vsb_content").className='newscontent_l';
+   if(size==14)
+  document.getElementById("vsb_content").className='newscontent_m';
+   if(size==12)
+  document.getElementById("vsb_content").className='newscontent_s';
+ }
+ </script>
+ 
+<script type="text/javascript">
+
+function dosuba1366a()
+{
+    if (document.all)
+  window.external.AddFavorite(document.location.href, document.title);
+  else if (window.sidebar)
+  window.sidebar.addPanel(document.title, document.location.href, "")
+}
+
+
+    showVote(396809,741155814,"#F3F7FA"," class='votetitlestyle1366' ","#090909","<img src ='/system/resource/images/newsvote/ss00.png' border='0'>"," class='votestyle1366' ","æ¬¢è¿å‚ä¸æŠ•ç¥¨",10,"<img src='/system/resource/images/newsvote/submit2.gif' onclick='_newscontent_getresult(396809,741155814)'  style='cursor:hand;'>","<img src='/system/resource/images/newsvote/view2.gif' onclick='_newscontent_lookresult()' style='cursor:hand;'>",document.form1366a,"è¯·å¡«å†™æŠ•ç¥¨é¡¹ï¼","127.0.0.1","æ‚¨å·²ç»æŠ•è¿‡ç¥¨äº†ï¼","æŠ•ç¥¨ç³»ç»Ÿå‡ºç°å¼‚å¸¸ï¼Œè¯·ç¨åå†è¯•ï¼","æ„Ÿè°¢å‚ä¸ï¼","æŠ•ç¥¨ç»“æœ")
+
+
+
+function recommandnewsa1366a()
+{
+  if(confirm("ä½ ç¡®å®šæ¨èæœ¬æ¡æ–°é—»ï¼Ÿ"))
+  {
+    var url = '/system/resource/code/news/recommand/addRecommandTimes.jsp'; 
+    var pars = 'wbnewsid=396809&owner=741155814'; 
+    var myAjax = new Ajax.Request( 
+        url, { method: 'get', 
+               parameters: pars, 
+               onComplete: getRecommandTimes1366
+        }); 
+   }
+}
+
+function getRecommandTimes1366() { 
+    var url = '/system/resource/code/news/recommand/getRecommandTimes.jsp'; 
+    var pars = 'wbnewsid=396809&owner=741155814&spanid=recommandspan1366'; 
+    var myAjax = new Ajax.Request(
+        url, { method: 'get', 
+               parameters: pars, 
+               onComplete: onGetRecommandTimes1366
+        }); 
+} 
+
+function onGetRecommandTimes1366(originalRequest) 
+{
+    var str = new String(originalRequest.responseText); 
+    var params = str.toQueryParams();
+    if(params != null)
+    {
+            var obj = document.getElementById(params["spanid"]); 
+            obj.innerHTML= params["recommandtimes"]; 
+    }    
+}
+ getRecommandTimes1366();
+</script><!--#endeditable--></TD></TR></TBODY></TABLE></TD>
+<TD width="65"></TD></TR></TBODY></TABLE>
+<TABLE class="bottomline2" border="0" cellspacing="0" cellpadding="0" width="100%" height="24">
+<TBODY>
+<TR>
+<TD></TD></TR></TBODY></TABLE>
+<TABLE border="0" cellspacing="0" cellpadding="0" bgcolor="#f5f6fa" height="36">
+<TBODY>
+<TR>
+<TD width="53"></TD>
+<TD valign="middle" width="567" align="left"><SPAN class="fon13">æ›´å¤šç›¸å…³æ–°é—»</SPAN></TD>
+<TD class="fon13" valign="middle" width="129" align="left"></TD></TR></TBODY></TABLE>
+<TABLE border="0" cellspacing="0" cellpadding="0" height="35">
+<TBODY>
+<TR>
+<TD valign="middle" width="53" align="left"></TD>
+<TD class="fon10 paddingtop4" height="60" valign="top" colspan="3" align="left"><!--#begineditable contype="" name="ç›¸å…³æ–‡ç« " action="" layout="" clone="0" namechanged="0" order="3" ispublic="0" tagname="ç›¸å…³æ–‡ç« " viewid="1338" stylesysid=""-->
+
+<span id="relateNewsjs1338js">è¯»å–å†…å®¹ä¸­,è¯·ç­‰å¾…...</span>
+<script language="JavaScript" src="../../system/resource/js/prototype.js"></script>
+<script language="JavaScript">
+function getRelateNewsjs1338js() { 
+    var url = '/system/resource/code/relatenews.jsp'; 
+    var pars = 'viewid=1338&titlelen=45&days=3&endimage=&clickshow=false&clickname=%E7%82%B9%E5%87%BB%EF%BC%9A+&&linkmode=_blank&mode=10&pageUrl=/system/_owners/newsnet/_webprj/content.jsp&columnshow=false&wbnewsid=396831&owner=741155814&limitdays=182&rowcount=15&columnstyle= columnstyle1338 &columnid=-1&r='+Math.random(); 
+    var myAjax = new Ajax.Request( 
+        url, { method: 'get', 
+               parameters: pars, 
+               onComplete: showRelateNewsjs1338js
+        }); 
+}   
+ 
+
+function showRelateNewsjs1338js(originalRequest) 
+{
+    var result="";
+    var xmlRoot = originalRequest.responseXML;
+    var columns = xmlRoot.getElementsByTagName("columns");
+    result+="<table  width='100%'";
+    for(var i =0 ; i < columns.length;i++)
+    {
+        if(i>1&&i%5==0)
+            result+="<tr><td colspan=3 height=20px></td></tr>";
+
+        var columnstring = getElementValuejs1338js(xmlRoot,'columnstring',i);
+        var ahref = getElementValuejs1338js(xmlRoot,'ahref',i);
+        var atitle = getElementValuejs1338js(xmlRoot,'atitle',i);
+        var title = getElementValuejs1338js(xmlRoot,'title',i);
+        var clickstring = getElementValuejs1338js(xmlRoot,'clickstring',i);
+        var endimage = getElementValuejs1338js(xmlRoot,'endimage',i);
+        var date = getElementValuejs1338js(xmlRoot,'date',i);
+        result+="<tr><td height='19' valign='middle' width=1 nowrap><span  class=leaderfont1338 ><img src=/images/fk.jpg align=absmiddle border=0></span></td>";
+        result+="<td valign='middle'>";
+        result+=columnstring;
+        result+="&nbsp;<a href='"+ahref+"' target=_blank  title='"+atitle+"' ";
+        result+="<span  class=titlestyle1338 >";
+        result+=title;    
+        result+="</span>";
+        result+="</a>&nbsp;";
+        result+=  clickstring;
+        result+="</td>";   
+        result+="<td valign='middle'  class=timestyle1338 >";
+        result+="("+date+")";
+        result+=endimage;
+        result+="</td></tr>"; 
+     }
+    result+="</table>";
+    if(result)
+    {
+        $("relateNewsjs1338js").innerHTML=result;  
+    }
+}
+//å…¼å®¹firefoxï¼Œä¿®æ”¹è·å–xmlèŠ‚ç‚¹æ–¹å¼
+function getElementValuejs1338js(root,elementName,elementsize)
+{
     
-<!--#endeditable--></DIV>
-<DIV id="dbydqss"><!--#begineditable clone="0" namechanged="0" order="1" ispublic="0" tagname="¼òµ¥¼ìË÷" viewid="51025" contype="" stylesysid="" layout="" action="" name="¼òµ¥¼ìË÷"-->
+    if(window.ActiveXObject)//IE
+    {
+        return root.getElementsByTagName(elementName).item(elementsize).firstChild.data;
+    }else
+    {
+        result = root.getElementsByTagName(elementName).item(elementsize);
+        if(result.childNodes.length > 1) 
+        {
+            return result.childNodes[1].nodeValue;
+        }else 
+        {
+            return result.firstChild.nodeValue;      
+        } 
+    }
+}
+getRelateNewsjs1338js();
+</script>
+<!--#endeditable--></TD>
+<TD valign="middle" width="53" align="left"></TD></TR>
+<TR>
+<TD colspan="5"></TD></TR>
+<TR>
+<TD height="16"></TD>
+<TD width="13"></TD>
+<TD width="553"></TD>
+<TD width="77"></TD>
+<TD></TD></TR></TBODY></TABLE></TD>
+<TD bgcolor="#949494" width="1"></TD>
+<TD valign="top" align="left">
+<TABLE border="0" cellspacing="0" cellpadding="0" width="100%">
+<TBODY>
+<TR>
+<TD bgcolor="#f5f6fa" height="32" valign="middle" align="left">
+<TABLE border="0" cellspacing="0" cellpadding="0" width="250">
+<TBODY>
+<TR>
+<TD valign="middle" width="12" align="left">&nbsp;</TD>
+<TD valign="middle" width="20" align="left"><IMG src="../../images/fd2.gif" width="12" height="12"></TD>
+<TD valign="middle" width="150" align="left"><IMG src="../../images/index_103.jpg" width="55" height="14"></TD>
+<TD valign="middle" width="11" align="left"><IMG src="../../images/index_109.jpg" width="6" height="8"></TD>
+<TD class="fon3" valign="middle" align="left"><A href="../../search.jsp?wbtreeid=1002">é«˜çº§æœç´¢</A></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD class="bottomline2" height="47" valign="middle" align="center">
+<TABLE border="0" cellspacing="0" cellpadding="0" width="225">
+<TBODY>
+<TR>
+<TD valign="middle" width="180" colspan="2" align="left"><!--#begineditable contype="" name="ç«™å†…æ£€ç´¢" action="" layout="" clone="0" namechanged="0" order="4" ispublic="0" tagname="ç«™å†…æ£€ç´¢" viewid="1341" stylesysid=""-->
 
 
 
 
 
-<form action="xinban/ssjg.jsp?wbtreeid=1001" method="post" name="a51025a" onsubmit="return subsearchdataa51025a()" style="display: inline">
-  <input type="hidden" name="Find" value="find"><input type="hidden" name="entrymode" value="1"><input type="hidden" id="INTEXT2" name="INTEXT2" value=""><input type="hidden" name="news_search_code">
- <table width="167" border="0" cellpadding="0" cellspacing="0" style="margin-top:3px">
+
+<script language="javascript" src="../../system/resource/js/base64.js"></script> 
+<script language="javascript" src="../../system/resource/js/formfunc.js"></script>
+<form action="../../search.jsp?wbtreeid=1002" method="post" name="a1341a" onsubmit="return subsearchdataa1341a()" style="display: inline">
+ <input type="hidden" name="Find" value="find">
+ <input type="hidden" name="entrymode" value="1">
+ <input type="hidden" id="INTEXT2" name="INTEXT2" value="">
+ <input type="hidden" name="news_search_code">
+ <table border="0" cellspacing="0" cellpadding="5">
   <tr>
-   <td>
-       <span id="intextspana51025a"></span>
-       <iframe id="intextframea51025a" src="about:blank" scrolling="no" frameborder="0" style="position:absolute;top:0px;left:0px;display:none"></iframe>
-       <input name="INTEXT" class="srkys" size="12" style="background-image:url(images/i_r2_c11.jpg);background-repeat:no-repeat;height:20px;width:124px;border-top-style:none;border-right-style: none;border-bottom-style: none;border-left-style: none;padding:4px 8px 0 10px;font-size: 12px">
+   <td Valign="middle" nowrap="nowrap" height="22">
+    <font class="leaderfont1341"> </font>
+    
+        <input type="hidden" name="condition" value="0">
+    </td><td><span id="intextspana1341a"></span><iframe id="intextframea1341a" src="about:blank" scrolling="no" frameborder="0" style="position:absolute;top:0px;left:0px;display:none"></iframe><input size="24" name="INTEXT" class="querystyle1341">
    </td>
    <td align="absmiddle" nowrap="nowrap" height="1">
-       <input type="image" src="images/i_r2_c12.jpg" width="23" height="24" align="absmiddle" valign="bottom" style="cursor: hand">
-   </td>
+   <input type="image" src="../../images/index_116.jpg" valign="bottom" style="cursor: hand"></td>
   </tr>
+  
  </table>
 </form>
 <script>
-function subsearchdataa51025a()
+ 
+function subsearchdataa1341a()
 { 
-    if(checkDataa51025a(document.a51025a))
+    if(checkDataa1341a(document.a1341a))
     {
        return true;  
     }
@@ -85,946 +455,270 @@ function subsearchdataa51025a()
 }       
 </script>
 
-    <script language="JavaScript" src="system/dwr/engine.js"></script>
-    <script language="JavaScript" src="system/dwr/util.js"></script>
-    <script language="JavaScript" src="system/dwr/interface/NewsSearchDWR.js"></script>
-    <script language="JavaScript" src="system/resource/js/vsb_news_search.js"></script>
-    <script language="JavaScript" src="system/resource/js/vsb_news_search_entry.js"></script>    
-    <script language="JavaScript" src="system/resource/js/language.js"></script>
-    <script language="JavaScript" src="system/resource/js/base64.js"></script>
-    <script language="JavaScript" src="system/resource/js/formfunc.js"></script>  
-    <script>    
-    news_searcha51025a = new vsb_news_search();
-    news_searcha51025a.isShowCode=false;
-    news_searcha51025a.tooltipid = 'tooltipa51025a';
-    news_searcha51025a.apptag = 'intextspana51025a';
-    news_searcha51025a.frametag = 'intextframea51025a';
-    
-    news_search_entrya51025a = new vsb_news_search_entry();
-    news_search_entrya51025a.formname = "a51025a";
-    news_search_entrya51025a.news_search_obj = news_searcha51025a; 
-    news_search_entrya51025a.querytxtsize = 155
-    news_search_entrya51025a.yzmts ="ÄúµÄ²éÑ¯¹ıÓÚÆµ·±£¬ÇëÊäÈëÑéÖ¤Âëºó¼ÌĞø²éÑ¯";
-    news_search_entrya51025a.qdstyle ="";
-    news_search_entrya51025a.qdname = "È·¶¨";
-    news_search_entrya51025a.qxstyle = "";
-    news_search_entrya51025a.qxname = "È¡Ïû";
-    
-    
-    function checkDataa51025a(formname)
-    {   
-        return news_search_entrya51025a.checkdata(formname);           
-    }
-    
-    </script>
-<script language="javascript" src="system/resource/js/base64.js"></script> 
-<!--#endeditable--></DIV>
-<DIV id="dbydq" style="font-size: 14px"><!--#begineditable clone="0" namechanged="0" order="2" ispublic="0" tagname="ÓÒÉÏÁ´½Ó" viewid="51026" contype="" stylesysid="" layout="" action="" name="ÓÒÉÏÁ´½Ó"--><script language="javascript" src="system/resource/js/dynclicks.js"></script><script language="javascript" src="system/resource/js/openlink.js"></script>    <a href="http://info.sjtu.edu.cn/index.aspx?jatkt=rejected" class="c51026" title="" onclick="_addDynClicks(&#34;wburl&#34;, 965815885, 3258)">×ÛºÏĞÅÏ¢Íø</a>
-    <span style="color:ffffff;padding-left:10px;padding-right:10px">|</span>
-    <a href="http://xxgk.sjtu.edu.cn/" class="c51026" target="_blank" title="" onclick="_addDynClicks(&#34;wburl&#34;, 965815885, 3475)">ĞÅÏ¢¹«¿ª</a>
-    <span style="color:ffffff;padding-left:10px;padding-right:10px">|</span>
-    <a href="http://3dcampus.sjtu.edu.cn/" class="c51026" target="_blank" title="ĞéÄâĞ£Ô°" onclick="_addDynClicks(&#34;wburl&#34;, 965815885, 3216)">ĞéÄâĞ£Ô°</a>
-    <span style="color:ffffff;padding-left:10px;padding-right:10px">|</span>
-    <a href="http://en.sjtu.edu.cn/" class="c51026" title="" onclick="_addDynClicks(&#34;wburl&#34;, 965815885, 3213)">English</a>
-    <span style="color:ffffff;padding-left:10px;padding-right:10px">|</span>
-    <a href="http://www.jwc.sjtu.edu.cn/web/sjtu/198109.htm" class="c51026" title="" onclick="_addDynClicks(&#34;wburl&#34;, 965815885, 3212)">Ğ£Àú</a>
-    <span style="color:ffffff;padding-left:10px;padding-right:10px">|</span>
-    <a href="http://mail.sjtu.edu.cn" class="c51026" title="" onclick="_addDynClicks(&#34;wburl&#34;, 965815885, 3214)">ÓÊÏä</a>
-    
-<!--#endeditable--></DIV></DIV>
-<DIV class="juzhong" style="padding-top: 13px;height: 103px">
-<DIV style="padding-left: 30px"><IMG height="99" src="images/i_r6_c6.png" width="375"></DIV></DIV>
-<DIV class="juzhong" style="height: 25px">
-<DIV id="daohang"><!--#begineditable clone="0" namechanged="0" order="3" ispublic="0" tagname="Ê×Ò³¹Ì¶¨À¸Ä¿" viewid="51087" contype="" stylesysid="" layout="" action="" name="Ê×Ò³¹Ì¶¨À¸Ä¿"--><table width="100%">
-    <tr>
-        <td>
-            <div class="nav_menustyle_1_1" style="position:relative;z-index:99999">
-                <ul>
-                    <li><a href="xbdh/yjdh/gk.htm">¸Å¿ö<!--[if gte IE 7]><!--><span style="font-size: 12px;color: #FFFFFF;padding-left:25px">©¦</span></a><!--<![endif]-->  
-                    <!--[if lte IE 6]><table><tr><td><![endif]-->
-                    <ul id="bjtm">
-                        <li><a href="xbdh/yjdh/gk/xxjj.htm" style="padding-right:15px">Ñ§Ğ£¼ò½é<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="xbdh/yjdh/gk/jgsz/jgbc.htm" style="padding-right:15px">»ú¹¹ÉèÖÃ<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="xbdh/yjdh/gk/lsyg.htm" style="padding-right:15px">ÀúÊ·ÑØ¸ï<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="xbdh/yjdh/gk/sjtj.htm" style="padding-right:15px">Êı¾İÍ³¼Æ<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="xbdh/yjdh/gk/jdld.htm" style="padding-right:15px">½»´óÁìµ¼<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="xbdh/yjdh/gk/lrld.htm" style="padding-right:15px">ÀúÈÎÁìµ¼<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="xbdh/yjdh/gk/xydy.htm" style="padding-right:15px">Ğ£Ô°µ¼ÓÎ<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                    </ul>
-                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
-                    </li>
-                    <li><a href="xbdh/yjdh/yx.htm">ÔºÏµ<!--[if gte IE 7]><!--><span style="font-size: 12px;color: #FFFFFF;padding-left:25px">©¦</span></a><!--<![endif]-->  
-                    <!--[if lte IE 6]><table><tr><td><![endif]-->
-                    <ul id="bjtm">
-                        <li><a href="xbdh/yjdh/yx/xy_x_.htm" style="padding-right:15px">Ñ§Ôº£¨Ïµ£©<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="xbdh/yjdh/yx/yjy.htm" style="padding-right:15px">ÑĞ¾¿Ôº<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                    </ul>
-                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
-                    </li>
-                    <li><a href="xbdh/yjdh/sz.htm">Ê¦×Ê<!--[if gte IE 7]><!--><span style="font-size: 12px;color: #FFFFFF;padding-left:25px">©¦</span></a><!--<![endif]-->  
-                    <!--[if lte IE 6]><table><tr><td><![endif]-->
-                    <ul id="bjtm">
-                        <li><a href="xbdh/yjdh/sz/szjj.htm" style="padding-right:15px">Ê¦×Ê¼ò½é<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="xbdh/yjdh/sz/lyys.htm" style="padding-right:15px">Á½ÔºÔºÊ¿<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="xbdh/yjdh/sz/jcrc.htm" style="padding-right:15px">½Ü³öÈË²Å<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                    </ul>
-                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
-                    </li>
-                    <li><a href="xbdh/yjdh/fw.htm">·şÎñ<!--[if gte IE 7]><!--><span style="font-size: 12px;color: #FFFFFF;padding-left:25px">©¦</span></a><!--<![endif]-->  
-                    <!--[if lte IE 6]><table><tr><td><![endif]-->
-                    <ul id="bjtm">
-                        <li><a href="xbdh/yjdh/fw/xyfw.htm" style="padding-right:15px">Ğ£Ô°·şÎñ<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="xbdh/yjdh/fw/shfw.htm" style="padding-right:15px">Éç»á·şÎñ<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                        <li><a href="http://www.sjtu.edu.cn/opinion.html" target="_blank" style="padding-right:15px">»ú¹Ø·şÎñÆÀÒé<!--[if gte IE 7]><!--></a><!--<![endif]--> 
-                        <!--[if lte IE 6]></a><![endif]-->
-                        </li>
-                    </ul>
-                    <!--[if lte IE 6]></td></tr></table></a><![endif]-->
-                    </li>
-                </ul>
-            </div>
-        </td>
-    </tr>
-</table><!--#endeditable--></DIV>
-<DIV id="xaldh"><!--#begineditable clone="0" namechanged="0" order="4" ispublic="0" tagname="¿ìËÙÍ¨µÀ" viewid="51028" contype="" stylesysid="" layout="" action="" name="¿ìËÙÍ¨µÀ"-->    
-    
-    
-    
-  
 
-    
-<script language="javascript">    
-<!--    
-    function doLinks2dfsjrhds9(o)    
-    {    
-        var link=document.getElementsByName("s2dfsjrhds9")[0];    
-        var index=link.selectedIndex;    
-        if (index==-1 || index>=link.options.length)    
-        {    
-          return;    
-        }    
-        var value = link.options[index].value;    
-        var obj = document.getElementById("h3ca2t17ds9");    
-        obj.href = value;
-        var wburlid =link.options[index].getAttribute("aa51028aa");
-        _addDynClicks('wburl',965815885,wburlid)
-            
-                     obj.target = "_blank"
-                    
-         if(document.all){
-          obj.click();     
-        }         
-         else 
-        { 
-          window.open(value);
-         }
-       
-       if(o.selectedIndex != 0)    
-       {    
-           o.selectedIndex = 0;    
-       }    
-    }    
--->    
-</script>  
-<table>    
-    <tr><td align="center">    
-            <span class="titlestyle51028"></span> <a id="h3ca2t17ds9"></a>    
-            <select name="s2dfsjrhds9" class="selectstyle51028" onChange="doLinks2dfsjrhds9(this)">    
-                <option value="">¿ìËÙÍ¨µÀ</option>    
-                <option vsbhrefname="value" aa51028aa="3502" value="http://bbs.sjtu.edu.cn">ÒûË®Ë¼Ô´BBS    
-                <option vsbhrefname="value" aa51028aa="3474" value="http://www.qianxslib.sjtu.edu.cn/">Ç®Ñ§É­Í¼Êé¹İ    
-                <option vsbhrefname="value" aa51028aa="3509" value="http://postd.sjtu.edu.cn/">²©Ê¿ºóÁ÷¶¯Õ¾    
-                <option vsbhrefname="value" aa51028aa="3510" value="http://zbb.sjtu.edu.cn/">ÕĞÍ¶±ê°ì    
-                <option vsbhrefname="value" aa51028aa="3511" value="http://www.sjtu.edu.cn/zsjy.htm">ÕĞÉú¾ÍÒµ    
-                <option vsbhrefname="value" aa51028aa="3512" value="http://foundation.sjtu.edu.cn/Index/Index.php">»ù½ğ»á    
-                <option vsbhrefname="value" aa51028aa="3513" value="http://alumni.sjtu.edu.cn/alumni/xiaoyouhui/index.php">Ğ£ÓÑ»á    
-                <option vsbhrefname="value" aa51028aa="3514" value="http://join.sjtu.edu.cn/">ÈË²ÅÕĞÆ¸    
-                <option vsbhrefname="value" aa51028aa="3515" value="http://www.sjtu.edu.cn/left/wbjd.htm">Í¼Êéµµ°¸    
-                <option vsbhrefname="value" aa51028aa="3516" value="http://cc.sjtu.edu.cn/G2S/ShowSystem/Index.aspx">¿Î³ÌÖĞĞÄ    
-                <option vsbhrefname="value" aa51028aa="3517" value="http://lc.sjtu.edu.cn/">µØ·½ºÏ×÷    
-                <option vsbhrefname="value" aa51028aa="3518" value="http://www3.sjtu.edu.cn/">ÀÏ°æÖ÷Ò³    
-                </select>    
-        </td><tr></table><!--#endeditable--></DIV>
-<DIV id="xaldh"><!--#begineditable clone="0" namechanged="0" order="5" ispublic="0" tagname="ÈÈµã×¨Ìâ" viewid="51029" contype="" stylesysid="" layout="" action="" name="ÈÈµã×¨Ìâ"-->    
-    
-    
-    
-  
 
-    
-<script language="javascript">    
-<!--    
-    function doLinks4adcmz9ds9(o)    
-    {    
-        var link=document.getElementsByName("s4adcmz9ds9")[0];    
-        var index=link.selectedIndex;    
-        if (index==-1 || index>=link.options.length)    
-        {    
-          return;    
-        }    
-        var value = link.options[index].value;    
-        var obj = document.getElementById("h5hk7y0rds9");    
-        obj.href = value;
-        var wburlid =link.options[index].getAttribute("aa51029aa");
-        _addDynClicks('wburl',965815885,wburlid)
-            
-                     obj.target = "_blank"
-                    
-         if(document.all){
-          obj.click();     
-        }         
-         else 
-        { 
-          window.open(value);
-         }
-       
-       if(o.selectedIndex != 0)    
-       {    
-           o.selectedIndex = 0;    
-       }    
-    }    
--->    
-</script>  
-<table>    
-    <tr><td align="center">    
-            <span class="titlestyle51029"></span> <a id="h5hk7y0rds9"></a>    
-            <select name="s4adcmz9ds9" class="selectstyle51029" onChange="doLinks4adcmz9ds9(this)">    
-                <option value="">ÈÈµã×¨Ìâ</option>    
-                <option vsbhrefname="value" aa51029aa="3573" value="http://cisse.sjtu.edu.cn/">¸ßĞÂ´¬²°ÓëÉîº£¿ª·¢×°±¸Ğ­Í¬´´ĞÂÖĞĞÄ    
-                <option vsbhrefname="value" aa51029aa="3476" value="http://www3.sjtu.edu.cn/qzlx.htm">µ³µÄÈºÖÚÂ·Ïß½ÌÓıÊµ¼ù»î¶¯×¨ÌâÍø    
-                <option vsbhrefname="value" aa51029aa="3519" value="http://202.120.33.37/14xz/">2014ÄêĞ£³¤½±ÆÀÑ¡    
-                <option vsbhrefname="value" aa51029aa="3431" value="http://xxgk.sjtu.edu.cn/">ĞÅÏ¢¹«¿ª    
-                <option vsbhrefname="value" aa51029aa="3227" value="http://news.sjtu.edu.cn/jdrw.htm">Ñ§Õß±ÊÌ¸    
-                <option vsbhrefname="value" aa51029aa="3220" value="http://www.sjtu.edu.cn/18/">¾Û½¹Ê®°Ë´ó    
-                <option vsbhrefname="value" aa51029aa="3217" value="http://www.sjtu.edu.cn/jdwmw.htm">ÎÄÃ÷ÔÚÏß    
-                <option vsbhrefname="value" aa51029aa="3219" value="http://weibo.com/chiaotunguniv">½»´óÎ¢²©    
-                </select>    
-        </td><tr></table><!--#endeditable--></DIV>
-<DIV id="daohangyou"><!--#begineditable clone="0" namechanged="0" order="6" ispublic="0" tagname="ÌØ±ğÀ¸Ä¿" viewid="51030" contype="" stylesysid="" layout="" action="" name="ÌØ±ğÀ¸Ä¿"--><a href="http://join.sjtu.edu.cn/" target="_blank" title="ÈË²ÅÕĞÆ¸" style="color:#ffffff;padding-right:10px">ÈË²ÅÕĞÆ¸</a><a href="http://www.lib.sjtu.edu.cn/" target="_blank" title="Í¼Êé¹İ" style="color:#ffffff;padding-right:10px">Í¼Êé¹İ</a><a href="http://foundation.sjtu.edu.cn/Index/Index.php" target="_blank" title="»ù½ğ»á" style="color:#ffffff;padding-right:10px">»ù½ğ»á</a><!--#endeditable--></DIV>
-<DIV id="wbrl" style="padding-top: 6px"><!--#begineditable clone="0" namechanged="0" order="7" ispublic="0" tagname="ÎÄ±¾ÈÕÀú1" viewid="51242" contype="" stylesysid="" layout="" action="" name="ÎÄ±¾ÈÕÀú"--><script language="javascript" src="system/resource/js/calendar/cld.js"></script>               
-<script language="JavaScript">
-function SolarTerm(DateGL){
-  var SolarTermStr=new Array(
-        "Ğ¡º®","´óº®","Á¢´º","ÓêË®","¾ªÕİ","´º·Ö",
-        "ÇåÃ÷","¹ÈÓê","Á¢ÏÄ","Ğ¡Âú","Ã¢ÖÖ","ÏÄÖÁ",
-        "Ğ¡Êî","´óÊî","Á¢Çï","´¦Êî","°×Â¶","Çï·Ö",
-        "º®Â¶","Ëª½µ","Á¢¶¬","Ğ¡Ñ©","´óÑ©","¶¬ÖÁ");
-  var DifferenceInMonth=new Array(
-        1272060,1275495,1281180,1289445,1299225,1310355,
-        1321560,1333035,1342770,1350855,1356420,1359045,
-        1358580,1355055,1348695,1340040,1329630,1318455,
-        1306935,1297380,1286865,1277730,1274550,1271556);
-  var DifferenceInYear=31556926;
-  var BeginTime=new Date(1901/1/1);
-  BeginTime.setTime(947120460000);
-     for(;DateGL.getFullYear()<BeginTime.getFullYear();){
-        BeginTime.setTime(BeginTime.getTime()-DifferenceInYear*1000);
-     }
-     for(;DateGL.getFullYear()>BeginTime.getFullYear();){
-        BeginTime.setTime(BeginTime.getTime()+DifferenceInYear*1000);
-     }
-     for(var M=0;DateGL.getMonth()>BeginTime.getMonth();M++){
-        BeginTime.setTime(BeginTime.getTime()+DifferenceInMonth[M]*1000);
-     }
-     if(DateGL.getDate()>BeginTime.getDate()){
-        BeginTime.setTime(BeginTime.getTime()+DifferenceInMonth[M]*1000);
-        M++;
-     }
-     if(DateGL.getDate()>BeginTime.getDate()){
-        BeginTime.setTime(BeginTime.getTime()+DifferenceInMonth[M]*1000);
-        M==23?M=0:M++;
-     }
-  var JQ="";
-  if(DateGL.getDate()==BeginTime.getDate()){
-    JQ+="½ñÈÕ<"+SolarTermStr[M]+">";
-  }
-  else if(DateGL.getDate()==BeginTime.getDate()-1){
-    JQ+="Ã÷ÈÕ<"+SolarTermStr[M]+">";
-  }
-  else if(DateGL.getDate()==BeginTime.getDate()-2){
-    JQ+="ºóÈÕ<;"+SolarTermStr[M]+">";
-  }
-  else{
-   JQ="";
-   if(DateGL.getMonth()==BeginTime.getMonth()){
-      JQ+="±¾ÔÂ";
-   }
-   else{
-     JQ+="ÏÂÔÂ";
-   }
-   JQ+=BeginTime.getDate()+"ÈÕ<"+SolarTermStr[M]+">";
-  }
-return JQ;
+<script language="javascript" src="../../_dwr/interface/NewsSearchDWR.js"></script>
+<script language="javascript" src="../../system/resource/js/vsb_news_search.js"></script> 
+<script language="javascript" src="../../system/resource/js/vsb_news_search_entry.js"></script> 
+<script language="javascript" src="../../system/resource/js/language.js"></script>  
+<script>    
+news_searcha1341a = new vsb_news_search();
+news_searcha1341a.isShowCode=false;
+news_searcha1341a.tooltipid = 'tooltipa1341a';
+news_searcha1341a.apptag = 'intextspana1341a';
+news_searcha1341a.frametag = 'intextframea1341a';
+news_search_entrya1341a = new vsb_news_search_entry();
+news_search_entrya1341a.formname = "a1341a";
+news_search_entrya1341a.news_search_obj = news_searcha1341a; 
+news_search_entrya1341a.querytxtsize = 169
+news_search_entrya1341a.yzmts ="æ‚¨çš„æŸ¥è¯¢è¿‡äºé¢‘ç¹ï¼Œè¯·è¾“å…¥éªŒè¯ç åç»§ç»­æŸ¥è¯¢";
+news_search_entrya1341a.qdstyle ="";
+news_search_entrya1341a.qdname = "ç¡®å®š";
+news_search_entrya1341a.qxstyle = "";
+news_search_entrya1341a.qxname = "å–æ¶ˆ";
+function checkDataa1341a(formname)
+{   
+    return news_search_entrya1341a.checkdata(formname);  
 }
-function RunGLNL51242(){          
-var today=new Date();          
-var d=new Array("ĞÇÆÚÈÕ","ĞÇÆÚÒ»","ĞÇÆÚ¶ş","ĞÇÆÚÈı","ĞÇÆÚËÄ","ĞÇÆÚÎå","ĞÇÆÚÁù");
-var nian = getYear(today)+"Äê"+(today.getMonth()+1)+"ÔÂ" +today.getDate()+"ÈÕ";         
-document.write('<div><a href=\"/xiaoli/xlindex.jsp?urltype=tree.TreeTempUrl&wbtreeid=1223\" title=Ğ£Àú target=_blank  class="fontstyle51242"  style="color:#ffffff;">');          
-document.write(nian+"&nbsp;&nbsp;"+d[today.getDay()]);          
-document.write("</a></div>");         
-}          
-RunGLNL51242();          
-</script>          <!--#endeditable--></DIV></DIV>
-<DIV style="clear: both"></DIV></DIV></DIV><!----±ä»»Í¼Æ¬---->
-<DIV id="contentnr1" style="background-image: url(images/i_bj.jpg);margin-left: 0px;width: 1030px;height: 332px;margin-left1: auto;margin-right1: auto">
-<DIV id="newschange" class1="juzhong" style="background-position: center 50%;background-image: url(images/i_bj.jpg);margin-left: 15px;width: 1000px;height: 32px"><!--#begineditable clone="0" namechanged="0" order="8" ispublic="0" tagname="Í¼Æ¬ÇĞ»»" viewid="51213" contype="" stylesysid="" layout="" action="" name="Í¼Æ¬ÇĞ»»"--><div class="sauder-feature" style="text-align:center">
-<div class="shadow-top"></div>
-        <div class="featureitem listpos_0" style="overflow: hidden;float: left;position: relative;width: 60px;z-index: 20">
-            <div class="subcontent Right">
-            <div style="text-align:left"><span class="newschangetitlestyle">ÈÃĞÂÏÊÖªÊ¶ÔÚÓäÔÃÖĞ´«ÊÚ</span><br><span style="text-align:left;color:white;font-size: 9pt;font-family: Î¢ÈíÑÅºÚ">ÉÏº£½»´óµ³Î¯Êé¼Ç½ªË¹ÏÜ×÷¿Í¡°ÏÊÔÃ¡±ÓëÑ§Éú³©Ì¸ÈËÉúºÍÀíÏë</span></div>
-            </div>
-            <a href="http://news.sjtu.edu.cn/info/1021/395199.htm" target="_blank"><image src="_mediafile/wwwsjtu2013/2014/12/09/256ajuyetr.jpg" border="0" /></a>
-        </div>
-        <div class="featureitem  listpos_1" style="overflow: hidden;float: left;position: relative;width: 60px;z-index: 21;display: block">
-            <div class="subcontent Right">
-            <div style="text-align:left"><span class="newschangetitlestyle">°®¹úÈÙĞ££¬Çà´ºÀøĞĞ</span><br><span style="text-align:left;color:white;font-size: 9pt;font-family: Î¢ÈíÑÅºÚ">ÉÏº£½»´ó¡°Ò»¶ş¡¤¾Å¶¬¼¾³¤ÅÜ¡±¾ÙĞĞ</span></div>
-
-            </div>
-            <a href="http://news.sjtu.edu.cn/info/1021/396064.htm" target="_blank"><image src="_mediafile/wwwsjtu2013/2014/12/10/2q7dmco9ny.jpg" border="0" /></a>
-        </div>
-        <div class="featureitem">
-            <div class="subcontent Right">
-            <div style="text-align:left"><span class="newschangetitlestyle">ÕÃÏÔÖĞ¹ú¿¹ÈÕÕ½ÕùÑĞ¾¿ĞÂË¼Â·¡¢ĞÂ³É¹û</span><br><span style="text-align:left;color:white;font-size: 9pt;font-family: Î¢ÈíÑÅºÚ">ÉÏº£½»Í¨´óÑ§¾Ù°ì¡°Ó¢¹úÑ§ÕßÁÖÂõ¿ÉÇ×ÀúµÄÖĞ¹ú¿¹Õ½¡±Í¼Æ¬Õ¹</span></div>
-            </div>
-            <a href="http://news.sjtu.edu.cn/info/1021/393946.htm" target="_blank"><image src="_mediafile/wwwsjtu2013/2014/12/09/2cyhbsmsgt.jpg" border="0" /></a>
-        </div>
-        <div class="featureitem">
-            <div class="subcontent Right">
-            <div style="text-align:left"><span class="newschangetitlestyle">¹²½¨ºÍĞ³´ó°®Ğ£Ô°</span><br><span style="text-align:left;color:white;font-size: 9pt;font-family: Î¢ÈíÑÅºÚ">´´½¨È«¹úÎÄÃ÷µ¥Î»</span></div>
-            </div>
-            <a href="http://www.sjtu.edu.cn/jdwmw.htm" target="_blank"><image src="_mediafile/wwwsjtu2013/2014/12/10/6x36cai8fc.jpg" border="0" /></a>
-        </div>
-        <div class="featureitem">
-            <div class="subcontent Right">
-            <div style="text-align:left"><span class="newschangetitlestyle">½»´ómini EXPO</span><br><span style="text-align:left;color:white;font-size: 9pt;font-family: Î¢ÈíÑÅºÚ">[ÄÏÑóÊÓ½ç]Ãñ×åµÄ£¬ÊÀ½çµÄ£¡</span></div>
-            </div>
-            <a href="http://news.sjtu.edu.cn/info/1023/393913.htm" target="_blank"><image src="_mediafile/wwwsjtu2013/2014/12/08/2xrhtpmm1n.jpg" border="0" /></a>
-        </div>
-</div>
-
-
-<script type="text/javascript" src="js/modernizr-1.6.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
-<script type="text/javascript" src="js/jq.sauder.features.js"></script>
-<script type="text/javascript" src="js/jquery.tweet.js"></script>
-<script type="text/javascript" src="js/global.js"></script>  
-<script>
 </script>
-
-<script>_showDynClickBatch(['dynclicks_u8_61303','dynclicks_u8_61370','dynclicks_u8_61304','dynclicks_u8_60609','dynclicks_u8_59308'],[61303,61370,61304,60609,59308],"wbnews", 965815885)</script>
-<!--#endeditable--></DIV></DIV>
-<DIV id="contentnr" style="background-position: center 50%;background-image: url(images/i_bj.jpg);margin-left: auto;width: 1030px;margin-right: auto">
-<DIV class="juzhong" id="synr">
-<DIV class="TabbedPanels" id="TabbedPanels1">
-<UL class="TabbedPanelsTabGroup">
-<LI class="TabbedPanelsTab" tabindex="0"><A href="http://news.sjtu.edu.cn/"><FONT color="#ffffff">ĞÂ ÎÅ</FONT></A> </LI>
-<LI class="TabbedPanelsTab" tabindex="0"><A href="xinban/lslby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1639" target="_blank"><FONT color="#ffffff">Í¨ ¸æ</FONT></A> </LI>
-<LI class="TabbedPanelsTab" tabindex="0"><A href="xinban/xxfblby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1763" target="_blank"><FONT color="#ffffff">Ñ§ Êõ</FONT></A> </LI>
-<LI class="TabbedPanelsTab" tabindex="0"><A href="http://www.sjtu.edu.cn/#" target="_blank"><FONT color="#ffffff">×¨ À¸</FONT></A> </LI>
-<LI class="TabbedPanelsTab" tabindex="0"><A href="http://media.sjtu.edu.cn" target="_blank"><FONT color="#ffffff">ĞÂÃ½Ìå</FONT></A> </LI></UL>
-<DIV class="TabbedPanelsContentGroup">
-<DIV class="TabbedPanelsContent">
-<DIV style="float: left;width: 520px;height: 233px">
-<DIV style="width: 480px;padding-top: 10px;height: 190px;background-color: #8d9532">
-<UL style="padding-right: 0px;padding-left: 0px;font-size: 12px;padding-bottom: 0px;margin: 0px;color: #ffffff;line-height: 30px;padding-top: 0px;font-family: ËÎÌå;list-style-type: none"><!--#begineditable clone="0" namechanged="0" order="9" ispublic="0" tagname="ĞÂÎÅ" viewid="51276" contype="" stylesysid="" layout="" action="" name="ĞÂÎÅ"-->
-
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1021/395199.htm" target="_blank" title="ÉÏº£½»´óµ³Î¯Êé¼Ç½ªË¹ÏÜ×÷¿Í¡°ÏÊÔÃ¡±ÓëÑ§Éú³©Ì¸ÈËÉúºÍÀíÏë[Í¼]" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">ÉÏº£½»´óµ³Î¯Êé¼Ç½ªË¹ÏÜ×÷¿Í¡°ÏÊÔÃ¡±ÓëÑ§Éú³©Ì¸ÈËÉúºÍÀíÏë[Í¼]</a></span></li>
-
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1021/396064.htm" target="_blank" title="ÉÏº£½»´ó¡°Ò»¶ş¡¤¾Å¶¬¼¾³¤ÅÜ¡±¾ÙĞĞ[Í¼]" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">ÉÏº£½»´ó¡°Ò»¶ş¡¤¾Å¶¬¼¾³¤ÅÜ¡±¾ÙĞĞ[Í¼]</a></span></li>
-
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1021/393946.htm" target="_blank" title="ÉÏº£½»Í¨´óÑ§¾Ù°ì¡°Ó¢¹úÑ§ÕßÁÖÂõ¿ÉÇ×ÀúµÄÖĞ¹ú¿¹Õ½¡±Í¼Æ¬Õ¹[Í¼]" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">ÉÏº£½»Í¨´óÑ§¾Ù°ì¡°Ó¢¹úÑ§ÕßÁÖÂõ¿ÉÇ×ÀúµÄÖĞ¹ú¿¹Õ½¡±Í¼Æ¬Õ¹[Í¼]</a></span></li>
-
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1021/395139.htm" target="_blank" title="[µ³½¨·ç²ÉÑ²Àñ]ÏµÍ³ÉúÎïÒ½Ñ§ÑĞ¾¿ÔºÖ±Êôµ³Ö§²¿:ÄıĞÄ¾ÛÁ¦´Ù·¢Õ¹" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">[µ³½¨·ç²ÉÑ²Àñ]ÏµÍ³ÉúÎïÒ½Ñ§ÑĞ¾¿ÔºÖ±Êôµ³Ö§²¿:ÄıĞÄ¾ÛÁ¦´Ù·¢Õ¹</a></span></li>
-
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1021/395976.htm" target="_blank" title="[µ³Ô±·ç²É]¹ùÊ¥ÈÙ£ºÇ±ĞÄ¿¹°©ÑĞ¾¿µÄÒ©Ñ§Á¼Ê¦[Í¼]" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">[µ³Ô±·ç²É]¹ùÊ¥ÈÙ£ºÇ±ĞÄ¿¹°©ÑĞ¾¿µÄÒ©Ñ§Á¼Ê¦[Í¼]</a></span></li>
-<!--#endeditable-->
-<!--#begineditable clone="0" namechanged="0" order="0" ispublic="0" tagname="½»´ó2013ĞÂ°æÊ×Ò³¹ö¶¯ĞÂÎÅÁĞ±í" viewid="51422" contype="" stylesysid="" layout="" action="" name="½»´ó2013ĞÂ°æÊ×Ò³¹ö¶¯ĞÂÎÅÁĞ±í"-->
-
-<div style="background:url(images/ii_r2_c2.png) no-repeat 23.5px 10px;width:400px;clear:both">
-<style>
-#demo a{padding-left:10px;font-size:12px;color:white;} 
-
-#demo a:hover{color:red;}
-
-
-</style>
-<div id="demo" style="overflow:hidden;width:360px;margin-left:40px">
-
-<table align="left" cellpadding="0" cellspace="0" border="0">
-<tr><td id="demo1" style="white-space:nowrap">
-
-    <a href="http://news.sjtu.edu.cn/info/1022/394462.htm" target="_blank" title="½»´ó´ú±í¶ÓÔÚµÚËÄ½ìÉÏº£ÊĞ´óÑ§Éú¹¤³ÌÑµÁ·×ÛºÏÄÜÁ¦¾ºÈü´´¼Ñ¼¨[Í¼]" style="color:">½»´ó´ú±í¶ÓÔÚµÚËÄ½ìÉÏº£ÊĞ´óÑ§Éú¹¤³ÌÑµÁ·×ÛºÏÄÜÁ¦¾ºÈü´´¼Ñ¼¨[Í¼]</a>
-
-    <a href="http://news.sjtu.edu.cn/info/1022/395977.htm" target="_blank" title="½»´óÖ÷³¡ÊÚ¿Î 32Ëù¸ßĞ£¡°Í¬Ê±ÒìµØ¡±Í¬ÉÏ¡¶¹¤³ÌÍ¼Ñ§¡·[Í¼]" style="color:">½»´óÖ÷³¡ÊÚ¿Î 32Ëù¸ßĞ£¡°Í¬Ê±ÒìµØ¡±Í¬ÉÏ¡¶¹¤³ÌÍ¼Ñ§¡·[Í¼]</a>
-
-    <a href="http://news.sjtu.edu.cn/info/1022/395227.htm" target="_blank" title="ÕÅ½ÜĞ£³¤Îª?ÕşÑ§×Ó´ø»ØÀîÕşµÀÏÈÉúµÄÏ£¼½ºÍ¹ÄÀø[Í¼]" style="color:">ÕÅ½ÜĞ£³¤Îª?ÕşÑ§×Ó´ø»ØÀîÕşµÀÏÈÉúµÄÏ£¼½ºÍ¹ÄÀø[Í¼]</a>
-
-    <a href="http://news.sjtu.edu.cn/info/1022/395270.htm" target="_blank" title="ÉÏº£½»´óÁ½Ëù¿××ÓÑ§ÔºÈÙ»ñ2014ÄêÏÈ½ø¿××ÓÑ§Ôº½±[Í¼]" style="color:">ÉÏº£½»´óÁ½Ëù¿××ÓÑ§ÔºÈÙ»ñ2014ÄêÏÈ½ø¿××ÓÑ§Ôº½±[Í¼]</a>
-
-    <a href="http://news.sjtu.edu.cn/info/1022/396070.htm" target="_blank" title="[ÈËÃñÈÕ±¨]ÕÅ½Ü£ºÖÆ¶È¼¤ÀøÊÇ´óÑ§ÖÎÀíµÄÖĞĞÄ»·½Ú" style="color:">[ÈËÃñÈÕ±¨]ÕÅ½Ü£ºÖÆ¶È¼¤ÀøÊÇ´óÑ§ÖÎÀíµÄÖĞĞÄ»·½Ú</a>
-
-    <a href="http://news.sjtu.edu.cn/info/1022/395491.htm" target="_blank" title="´«³Ğ¡¤ÈÚºÏ¡¤´´ĞÂ ¸½ÊôÒ»Ôº¾Ù°ì2014¡°¹«¼ÃÄÚ¿ÆÂÛÌ³¡±" style="color:">´«³Ğ¡¤ÈÚºÏ¡¤´´ĞÂ ¸½ÊôÒ»Ôº¾Ù°ì2014¡°¹«¼ÃÄÚ¿ÆÂÛÌ³¡±</a>
-
-    <a href="http://news.sjtu.edu.cn/info/1022/395561.htm" target="_blank" title="ÉÏº£ÊĞÎ¯Ğû´«²¿Áìµ¼²Î¹Û" Ó¢¹úÑ§ÕßÁÖÂõ¿ÉÇ×ÀúµÄÖĞ¹ú¿¹Õ½"Í¼Æ¬Õ¹[Í¼]" style="color:">ÉÏº£ÊĞÎ¯Ğû´«²¿Áìµ¼²Î¹Û"Ó¢¹úÑ§ÕßÁÖÂõ¿ÉÇ×ÀúµÄÖĞ¹ú¿¹Õ½"Í¼Æ¬Õ¹[Í¼]</a>
-
-    <a href="http://news.sjtu.edu.cn/info/1022/395178.htm" target="_blank" title="ÉÏº£½»´ó2014ÄêµÚËÄ´ÎĞ£Ôº³¤ÁªÏ¯»áÒéÕÙ¿ª[Í¼]" style="color:">ÉÏº£½»´ó2014ÄêµÚËÄ´ÎĞ£Ôº³¤ÁªÏ¯»áÒéÕÙ¿ª[Í¼]</a>
-
-    <a href="http://news.sjtu.edu.cn/info/1022/394516.htm" target="_blank" title="ÉÏº£½»´óÓëÒ®Â³´óÑ§¹²Í¬¾Ù°ì¡°2015ĞÂÄêÒôÀÖ»á¡±[Í¼]" style="color:">ÉÏº£½»´óÓëÒ®Â³´óÑ§¹²Í¬¾Ù°ì¡°2015ĞÂÄêÒôÀÖ»á¡±[Í¼]</a>
-
-    <a href="http://news.sjtu.edu.cn/info/1022/394696.htm" target="_blank" title="ÉÏº£½»´ó¾Ù°ì¡°¿íÌå¿Í»ú¹Ø¼ü¼¼Êõ¼°¿ÆÑ§ÎÊÌâ¡±ÂÛÌ³[Í¼]" style="color:">ÉÏº£½»´ó¾Ù°ì¡°¿íÌå¿Í»ú¹Ø¼ü¼¼Êõ¼°¿ÆÑ§ÎÊÌâ¡±ÂÛÌ³[Í¼]</a>
-
-</td><td id="demo2" style="white-space:nowrap"></td></tr></table></div>
-<script>
- var speed=40;
- var demo=document.getElementById('demo');
- var demo2=document.getElementById('demo2');
- var demo1=document.getElementById('demo1');
- demo2.innerHTML=demo1.innerHTML;
- function Marquee(){if(demo2.offsetWidth-demo.scrollLeft<=0)demo.scrollLeft-=demo1.offsetWidth;else demo.scrollLeft++;}
- var MyMar=setInterval(Marquee,speed);  
- </script>
- </div><!--#endeditable--></UL></DIV>
-<DIV style="width: 520px;height: 22px;background-color: #8d9532">
-<DIV style="font-size: 12px;float: right;width: 40px;color: #ffffff;padding-top: 4px;text-align: center"><A href="http://news.sjtu.edu.cn/"><FONT color="#ffffff">¸ü¶à</FONT></A></DIV>
-<DIV style="float: right;width: 40px;height: 22px;background-color: #373737"></DIV></DIV>
-<DIV style="width: 480px;height: 10px;background-color: #8d9532"></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">ÈË²ÅÅàÑø</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="10" ispublic="0" tagname="ÈË²ÅÅàÑø" viewid="51033" contype="" stylesysid="" layout="" action="" name="ÈË²ÅÅàÑø"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51033{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51033"> 
-<UL>
-<LI><A href="xbdh/ztbk/rcpy/zsrx.htm">ÕĞÉúÈÈÏß</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/kcjx.htm">¿Î³Ì½ÌÑ§</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/xzfc1.htm">Ñ§×Ó·ç²É</A>
-</LI>
-<LI><A href="http://www.job.sjtu.edu.cn/">¾ÍÒµĞÅÏ¢</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/cxcy.htm">´´ĞÂ´´Òµ</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">¿ÆÑ§ÑĞ¾¿</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="11" ispublic="0" tagname="¿ÆÑ§ÑĞ¾¿" viewid="51035" contype="" stylesysid="" layout="" action="" name="¿ÆÑ§ÑĞ¾¿"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51035{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51035"> 
-<UL>
-<LI><A href="xinban/sanjilby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1623">¼Æ»®ÏîÄ¿</A>
-</LI>
-<LI><A href="http://kejichu.sjtu.edu.cn/kjhz/zxtz.htm">¿Æ¼¼ºÏ×÷</A>
-</LI>
-<LI><A href="http://kejichu.sjtu.edu.cn/ptjd/bmjs.htm">»ùµØ¹ÜÀí</A>
-</LI>
-<LI><A href="xbdh/ztbk/kxyj/yjzx.htm">ÑĞ¾¿ÖĞĞÄ</A>
-</LI>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1626">¿ÆÑ§ÆÚ¿¯</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">¹ú¼Ê½»Á÷</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="12" ispublic="0" tagname="¹ú¼Ê½»Á÷" viewid="51036" contype="" stylesysid="" layout="" action="" name="¹ú¼Ê½»Á÷"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51036{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51036"> 
-<UL>
-<LI><A href="http://icae.sjtu.edu.cn/zwb/list_cn.jsp?urltype=tree.TreeTempUrl&wbtreeid=1005">½»Á÷»î¶¯</A>
-</LI>
-<LI><A href="http://icae.sjtu.edu.cn/zwb/partnerships.jsp?urltype=tree.TreeTempUrl&wbtreeid=1006">ºÏ×÷°ìÑ§</A>
-</LI>
-<LI><A href="xinban/gjjllby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1751">Íâ×¨ÒıÖÇ</A>
-</LI>
-<LI><A href="http://isc.sjtu.edu.cn/">¹ú¼Ê½ÌÓı</A>
-</LI>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1632">º£ÍâÓÎÑ§</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">´óÑ§ÎÄ»¯</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="13" ispublic="0" tagname="´óÑ§ÎÄ»¯" viewid="51037" contype="" stylesysid="" layout="" action="" name="´óÑ§ÎÄ»¯"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51037{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51037"> 
-<UL>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1760">Ğ£Ê·×ÊÁÏ</A>
-</LI>
-<LI><A href="xinban/sanjilby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1635">ÎÄ»¯»î¶¯</A>
-</LI>
-<LI><A href="http://www.sjtu.edu.cn/jdwmw.htm">ÎÄÃ÷ÔÚÏß</A>
-</LI>
-<LI><A href="xbdh/ztbk/dxwh/wbjd.htm">ÎÄ²©½»´ó</A>
-</LI>
-<LI><A href="http://youth.sjtu.edu.cn/plus/list.php?tid=40">ÎÄ»¯ÉçÍÅ</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV></DIV>
-<DIV class="TabbedPanelsContent">
-<DIV class="nrljz">
-<DIV class="dhljbt">ÈË²ÅÅàÑø</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="10" ispublic="0" tagname="ÈË²ÅÅàÑø" viewid="51033" contype="" stylesysid="" layout="" action="" name="ÈË²ÅÅàÑø"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51033{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51033"> 
-<UL>
-<LI><A href="xbdh/ztbk/rcpy/zsrx.htm">ÕĞÉúÈÈÏß</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/kcjx.htm">¿Î³Ì½ÌÑ§</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/xzfc1.htm">Ñ§×Ó·ç²É</A>
-</LI>
-<LI><A href="http://www.job.sjtu.edu.cn/">¾ÍÒµĞÅÏ¢</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/cxcy.htm">´´ĞÂ´´Òµ</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV style="float: left;width: 520px;height: 233px">
-<DIV style="width: 480px;padding-top: 10px;height: 190px;background-color: #37729e"><!--#begineditable clone="0" namechanged="0" order="14" ispublic="0" tagname="Í¨Öª" viewid="51038" contype="" stylesysid="" layout="" action="" name="Í¨Öª"--><ul style="list-style-type: none;font-size: 12px;font-family: ËÎÌå;color: #ffffff;padding-bottom: 0px;padding-top: 0px;padding-left: 0px;margin: 0px;line-height: 30px;padding-right: 0px">
-   <li style="padding-left: 24px"><span style="float: left;width: 345px"><img src="images/ii_r2_c2.png" width="16" height="11"><a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1253&wbnewsid=62036" target="_blank" title="ÉÏº£½»Í¨´óÑ§¹«¿ªÕĞÆ¸»·¾³¿ÆÑ§Óë¹¤³ÌÑ§ÔºÔº³¤¹«¸æ" style="color:#FFF;TEXT-DECORATION: none">ÉÏº£½»Í¨´óÑ§¹«¿ªÕĞÆ¸»·¾³¿ÆÑ§Óë¹¤³ÌÑ§ÔºÔº³¤¹«¸æ</a></span><span style="float: left">(2014-12-08)</span></li>
-   <li style="padding-left: 24px"><span style="float: left;width: 345px"><img src="images/ii_r2_c2.png" width="16" height="11"><a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1253&wbnewsid=62018" target="_blank" title="ÉÏº£½»´ó2013-2014Ñ§Äê±¾¿Æ½ÌÑ§¹¤×÷×¨ÏîÇé¿öµÄ±¨¸æ" style="color:#FFF;TEXT-DECORATION: none">ÉÏº£½»´ó2013-2014Ñ§Äê±¾¿Æ½ÌÑ§¹¤×÷×¨ÏîÇé¿öµÄ±¨¸æ</a></span><span style="float: left">(2014-12-07)</span></li>
-   <li style="padding-left: 24px"><span style="float: left;width: 345px"><img src="images/ii_r2_c2.png" width="16" height="11"><a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1253&wbnewsid=61881" target="_blank" title="2015Äê¡°ÉÏº£½»Í¨´óÑ§Ğ£³¤½±¡±åàÑ¡¹«¸æ" style="color:#FFF;TEXT-DECORATION: none">2015Äê¡°ÉÏº£½»Í¨´óÑ§Ğ£³¤½±¡±åàÑ¡¹«¸æ</a></span><span style="float: left">(2014-11-24)</span></li>
-   <li style="padding-left: 24px"><span style="float: left;width: 345px"><img src="images/ii_r2_c2.png" width="16" height="11"><a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1253&wbnewsid=62076" target="_blank" title="²ÆÎñ¼Æ»®´¦¹ØÓÚ2014ÄêÄêÖÕÒµÎñ¹¤×÷µÄÍ¨Öª" style="color:#FFF;TEXT-DECORATION: none">²ÆÎñ¼Æ»®´¦¹ØÓÚ2014ÄêÄêÖÕÒµÎñ¹¤×÷µÄÍ¨Öª</a></span><span style="float: left">(2014-12-10)</span></li>
-   <li style="padding-left: 24px"><span style="float: left;width: 345px"><img src="images/ii_r2_c2.png" width="16" height="11"><a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1253&wbnewsid=62040" target="_blank" title="ÉÏº£½»Í¨´óÑ§µÚ45½ìÔË¶¯»áÀºÇò·ÖÈü³¡¹ÛÈü±¨ÃûÍ¨Öª" style="color:#FFF;TEXT-DECORATION: none">ÉÏº£½»Í¨´óÑ§µÚ45½ìÔË¶¯»áÀºÇò·ÖÈü³¡¹ÛÈü±¨ÃûÍ¨Öª</a></span><span style="float: left">(2014-12-09)</span></li>
-   <li style="padding-left: 24px"><span style="float: left;width: 345px"><img src="images/ii_r2_c2.png" width="16" height="11"><a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1253&wbnewsid=62078" target="_blank" title="2014Äê¶ÈÉÏº£½»Í¨´óÑ§ºóÇÚ·şÎñÂúÒâ¶È²âÆÀÑûÇëº¯" style="color:#FFF;TEXT-DECORATION: none">2014Äê¶ÈÉÏº£½»Í¨´óÑ§ºóÇÚ·şÎñÂúÒâ¶È²âÆÀÑûÇëº¯</a></span><span style="float: left">(2014-12-10)</span></li>
-</ul><script>_showDynClickBatch(['dynclicks_u16_62036','dynclicks_u16_62018','dynclicks_u16_61881','dynclicks_u16_62076','dynclicks_u16_62040','dynclicks_u16_62078'],[62036,62018,61881,62076,62040,62078],"wbnews", 965815885)</script>
-<!--#endeditable--></DIV>
-<DIV style="width: 520px;height: 22px;background-color: #37729e">
-<DIV style="font-size: 12px;float: right;width: 40px;color: #ffffff;padding-top: 4px;text-align: center"><A href="xinban/lslby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1639"><FONT color="#ffffff">¸ü¶à</FONT></A></DIV>
-<DIV style="float: right;width: 40px;height: 22px;background-color: #373737"></DIV></DIV>
-<DIV style="width: 480px;height: 10px;background-color: #37729e"></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">¿ÆÑ§ÑĞ¾¿</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="11" ispublic="0" tagname="¿ÆÑ§ÑĞ¾¿" viewid="51035" contype="" stylesysid="" layout="" action="" name="¿ÆÑ§ÑĞ¾¿"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51035{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51035"> 
-<UL>
-<LI><A href="xinban/sanjilby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1623">¼Æ»®ÏîÄ¿</A>
-</LI>
-<LI><A href="http://kejichu.sjtu.edu.cn/kjhz/zxtz.htm">¿Æ¼¼ºÏ×÷</A>
-</LI>
-<LI><A href="http://kejichu.sjtu.edu.cn/ptjd/bmjs.htm">»ùµØ¹ÜÀí</A>
-</LI>
-<LI><A href="xbdh/ztbk/kxyj/yjzx.htm">ÑĞ¾¿ÖĞĞÄ</A>
-</LI>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1626">¿ÆÑ§ÆÚ¿¯</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">¹ú¼Ê½»Á÷</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="12" ispublic="0" tagname="¹ú¼Ê½»Á÷" viewid="51036" contype="" stylesysid="" layout="" action="" name="¹ú¼Ê½»Á÷"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51036{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51036"> 
-<UL>
-<LI><A href="http://icae.sjtu.edu.cn/zwb/list_cn.jsp?urltype=tree.TreeTempUrl&wbtreeid=1005">½»Á÷»î¶¯</A>
-</LI>
-<LI><A href="http://icae.sjtu.edu.cn/zwb/partnerships.jsp?urltype=tree.TreeTempUrl&wbtreeid=1006">ºÏ×÷°ìÑ§</A>
-</LI>
-<LI><A href="xinban/gjjllby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1751">Íâ×¨ÒıÖÇ</A>
-</LI>
-<LI><A href="http://isc.sjtu.edu.cn/">¹ú¼Ê½ÌÓı</A>
-</LI>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1632">º£ÍâÓÎÑ§</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">´óÑ§ÎÄ»¯</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="13" ispublic="0" tagname="´óÑ§ÎÄ»¯" viewid="51037" contype="" stylesysid="" layout="" action="" name="´óÑ§ÎÄ»¯"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51037{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51037"> 
-<UL>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1760">Ğ£Ê·×ÊÁÏ</A>
-</LI>
-<LI><A href="xinban/sanjilby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1635">ÎÄ»¯»î¶¯</A>
-</LI>
-<LI><A href="http://www.sjtu.edu.cn/jdwmw.htm">ÎÄÃ÷ÔÚÏß</A>
-</LI>
-<LI><A href="xbdh/ztbk/dxwh/wbjd.htm">ÎÄ²©½»´ó</A>
-</LI>
-<LI><A href="http://youth.sjtu.edu.cn/plus/list.php?tid=40">ÎÄ»¯ÉçÍÅ</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV></DIV>
-<DIV class="TabbedPanelsContent">
-<DIV class="nrljz">
-<DIV class="dhljbt">ÈË²ÅÅàÑø</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="10" ispublic="0" tagname="ÈË²ÅÅàÑø" viewid="51033" contype="" stylesysid="" layout="" action="" name="ÈË²ÅÅàÑø"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51033{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51033"> 
-<UL>
-<LI><A href="xbdh/ztbk/rcpy/zsrx.htm">ÕĞÉúÈÈÏß</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/kcjx.htm">¿Î³Ì½ÌÑ§</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/xzfc1.htm">Ñ§×Ó·ç²É</A>
-</LI>
-<LI><A href="http://www.job.sjtu.edu.cn/">¾ÍÒµĞÅÏ¢</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/cxcy.htm">´´ĞÂ´´Òµ</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV class="nrljz">
-<DIV class="dhljbt">¿ÆÑ§ÑĞ¾¿</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="11" ispublic="0" tagname="¿ÆÑ§ÑĞ¾¿" viewid="51035" contype="" stylesysid="" layout="" action="" name="¿ÆÑ§ÑĞ¾¿"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51035{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51035"> 
-<UL>
-<LI><A href="xinban/sanjilby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1623">¼Æ»®ÏîÄ¿</A>
-</LI>
-<LI><A href="http://kejichu.sjtu.edu.cn/kjhz/zxtz.htm">¿Æ¼¼ºÏ×÷</A>
-</LI>
-<LI><A href="http://kejichu.sjtu.edu.cn/ptjd/bmjs.htm">»ùµØ¹ÜÀí</A>
-</LI>
-<LI><A href="xbdh/ztbk/kxyj/yjzx.htm">ÑĞ¾¿ÖĞĞÄ</A>
-</LI>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1626">¿ÆÑ§ÆÚ¿¯</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV style="float: left;width: 520px;height: 233px">
-<DIV style="width: 480px;padding-top: 10px;height: 190px;background-color: #7d7b7c"><!--#begineditable clone="0" namechanged="0" order="15" ispublic="0" tagname="Ñ§Êõ" viewid="51302" contype="" stylesysid="" layout="" action="" name="Ñ§Êõ"-->
+<!--#endeditable--></FORM></FORM></FORM></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE border="0" cellspacing="0" cellpadding="0" width="100%">
+<TBODY>
+<TR>
+<TD bgcolor="#f5f6fa" height="32" valign="middle" align="left">
+<TABLE border="0" cellspacing="0" cellpadding="0" width="250">
+<TBODY>
+<TR>
+<TD valign="middle" width="12" align="left"></TD>
+<TD valign="middle" width="20" align="left"><IMG src="../../images/fd2.gif" width="12" height="12"></TD>
+<TD valign="middle" width="150" align="left"><IMG src="../../images/index_137.jpg" width="56" height="14"></TD>
+<TD valign="middle" width="11" align="left"><IMG src="../../images/index_109.jpg" width="6" height="8"></TD>
+<TD class="fon3" valign="middle" align="left"><A href="../../index/bztj.htm" target="_blank">æ›´å¤š. . . </A></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD height="50" valign="middle" align="center">
+<TABLE border="0" cellspacing="0" cellpadding="0" width="90%">
+<TBODY>
+<TR>
+<TD height="10" width="12" colspan="2"></TD></TR>
+<TR>
+<TD valign="middle" colspan="2" align="left"><!--#begineditable contype="" name="æœ¬ç«™æ¨è-åˆ—è¡¨é¡µ" action="" layout="" clone="0" namechanged="0" order="5" ispublic="0" tagname="æœ¬ç«™æ¨è-åˆ—è¡¨é¡µ" viewid="1336" stylesysid=""-->
 <table width="100%" cellspacing="3" cellpadding="0">  
-<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont51302"><img src="images/ii_r2_c2.png" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
-			    
-			<a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1251&wbnewsid=62032" class="c51302" title="½ÌÑ§·¢Õ¹ÖĞĞÄÎç²Í»á£ºTurning PointÍ¶Æ±Æ÷ÌåÑéÎç²Í»á" target="_blank">½ÌÑ§·¢Õ¹ÖĞĞÄÎç²Í»á£ºTurning PointÍ¶Æ±Æ÷ÌåÑéÎç²Í»á</a>
-				
-			
-			
-			</td>  
-        <td valign="middle" align="right" class="timestyle51302"></td></tr>  
-<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont51302"><img src="images/ii_r2_c2.png" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
-			    
-			<a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1251&wbnewsid=62010" class="c51302" title="ĞÂĞÍ¿É¿Ø½µ½â»·ÑõÊ÷Ö¬µÄÑĞ¾¿" target="_blank">ĞÂĞÍ¿É¿Ø½µ½â»·ÑõÊ÷Ö¬µÄÑĞ¾¿</a>
-				
-			
-			
-			</td>  
-        <td valign="middle" align="right" class="timestyle51302"></td></tr>  
-<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont51302"><img src="images/ii_r2_c2.png" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
-			    
-			<a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1251&wbnewsid=62033" class="c51302" title="½ÌÑ§·¢Õ¹ÖĞĞÄÎç²Í»á£ºÇ³Ì¸·¨¹ú¹¤³ÌÊ¦½ÌÓı" target="_blank">½ÌÑ§·¢Õ¹ÖĞĞÄÎç²Í»á£ºÇ³Ì¸·¨¹ú¹¤³ÌÊ¦½ÌÓı</a>
-				
-			
-			
-			</td>  
-        <td valign="middle" align="right" class="timestyle51302"></td></tr>  
-<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont51302"><img src="images/ii_r2_c2.png" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
-			    
-			<a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1251&wbnewsid=62045" class="c51302" title="Reviving Tesla for an Array of Possibilities" target="_blank">Reviving Tesla for an Array of Possibilities</a>
-				
-			
-			
-			</td>  
-        <td valign="middle" align="right" class="timestyle51302"></td></tr>  
-<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont51302"><img src="images/ii_r2_c2.png" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
-			    
-			<a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1251&wbnewsid=62013" class="c51302" title="½ÌÑ§·¢Õ¹ÖĞĞÄÎç²Í»á£ºÒ»Á÷´óÑ§µÄ½ÌÑ§ÊÇÊ²Ã´ÑùµÄ£¿" target="_blank">½ÌÑ§·¢Õ¹ÖĞĞÄÎç²Í»á£ºÒ»Á÷´óÑ§µÄ½ÌÑ§ÊÇÊ²Ã´ÑùµÄ£¿</a>
-				
-			
-			
-			</td>  
-        <td valign="middle" align="right" class="timestyle51302"></td></tr>  
-<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont51302"><img src="images/ii_r2_c2.png" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
-			    
-			<a href="xiaoli/xlactivitycontent.jsp?urltype=news.NewsContentUrl&wbtreeid=1251&wbnewsid=62029" class="c51302" title="Combining Arrays and Mass Spectrometry for High Throughput Discovery in Biology" target="_blank">Combining Arrays and Mass Spectrometry for High Throughput Disc...</a>
-				
-			
-			
-			</td>  
-        <td valign="middle" align="right" class="timestyle51302"></td></tr>
-</table>  <!--#endeditable--></DIV>
-<DIV style="width: 520px;height: 22px;background-color: #7d7b7c">
-<DIV style="font-size: 12px;float: right;width: 40px;color: #ffffff;padding-top: 4px;text-align: center"><A href="xinban/xxfblby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1763"><FONT color="#ffffff">¸ü¶à</FONT></A></DIV>
-<DIV style="float: right;width: 40px;height: 22px;background-color: #373737"></DIV></DIV>
-<DIV style="width: 480px;height: 10px;background-color: #7d7b7c"></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">¹ú¼Ê½»Á÷</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="12" ispublic="0" tagname="¹ú¼Ê½»Á÷" viewid="51036" contype="" stylesysid="" layout="" action="" name="¹ú¼Ê½»Á÷"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51036{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51036"> 
-<UL>
-<LI><A href="http://icae.sjtu.edu.cn/zwb/list_cn.jsp?urltype=tree.TreeTempUrl&wbtreeid=1005">½»Á÷»î¶¯</A>
-</LI>
-<LI><A href="http://icae.sjtu.edu.cn/zwb/partnerships.jsp?urltype=tree.TreeTempUrl&wbtreeid=1006">ºÏ×÷°ìÑ§</A>
-</LI>
-<LI><A href="xinban/gjjllby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1751">Íâ×¨ÒıÖÇ</A>
-</LI>
-<LI><A href="http://isc.sjtu.edu.cn/">¹ú¼Ê½ÌÓı</A>
-</LI>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1632">º£ÍâÓÎÑ§</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">´óÑ§ÎÄ»¯</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="13" ispublic="0" tagname="´óÑ§ÎÄ»¯" viewid="51037" contype="" stylesysid="" layout="" action="" name="´óÑ§ÎÄ»¯"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51037{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51037"> 
-<UL>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1760">Ğ£Ê·×ÊÁÏ</A>
-</LI>
-<LI><A href="xinban/sanjilby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1635">ÎÄ»¯»î¶¯</A>
-</LI>
-<LI><A href="http://www.sjtu.edu.cn/jdwmw.htm">ÎÄÃ÷ÔÚÏß</A>
-</LI>
-<LI><A href="xbdh/ztbk/dxwh/wbjd.htm">ÎÄ²©½»´ó</A>
-</LI>
-<LI><A href="http://youth.sjtu.edu.cn/plus/list.php?tid=40">ÎÄ»¯ÉçÍÅ</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV></DIV>
-<DIV class="TabbedPanelsContent">
-<DIV class="nrljz">
-<DIV class="dhljbt">ÈË²ÅÅàÑø</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="10" ispublic="0" tagname="ÈË²ÅÅàÑø" viewid="51033" contype="" stylesysid="" layout="" action="" name="ÈË²ÅÅàÑø"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51033{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51033"> 
-<UL>
-<LI><A href="xbdh/ztbk/rcpy/zsrx.htm">ÕĞÉúÈÈÏß</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/kcjx.htm">¿Î³Ì½ÌÑ§</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/xzfc1.htm">Ñ§×Ó·ç²É</A>
-</LI>
-<LI><A href="http://www.job.sjtu.edu.cn/">¾ÍÒµĞÅÏ¢</A>
-</LI>
-<LI><A href="xbdh/ztbk/rcpy/cxcy.htm">´´ĞÂ´´Òµ</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV class="nrljz">
-<DIV class="dhljbt">¿ÆÑ§ÑĞ¾¿</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="11" ispublic="0" tagname="¿ÆÑ§ÑĞ¾¿" viewid="51035" contype="" stylesysid="" layout="" action="" name="¿ÆÑ§ÑĞ¾¿"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51035{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51035"> 
-<UL>
-<LI><A href="xinban/sanjilby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1623">¼Æ»®ÏîÄ¿</A>
-</LI>
-<LI><A href="http://kejichu.sjtu.edu.cn/kjhz/zxtz.htm">¿Æ¼¼ºÏ×÷</A>
-</LI>
-<LI><A href="http://kejichu.sjtu.edu.cn/ptjd/bmjs.htm">»ùµØ¹ÜÀí</A>
-</LI>
-<LI><A href="xbdh/ztbk/kxyj/yjzx.htm">ÑĞ¾¿ÖĞĞÄ</A>
-</LI>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1626">¿ÆÑ§ÆÚ¿¯</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">¹ú¼Ê½»Á÷</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="12" ispublic="0" tagname="¹ú¼Ê½»Á÷" viewid="51036" contype="" stylesysid="" layout="" action="" name="¹ú¼Ê½»Á÷"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
-</script>
-<!--[if IE 6]> <style>#c51036{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51036"> 
-<UL>
-<LI><A href="http://icae.sjtu.edu.cn/zwb/list_cn.jsp?urltype=tree.TreeTempUrl&wbtreeid=1005">½»Á÷»î¶¯</A>
-</LI>
-<LI><A href="http://icae.sjtu.edu.cn/zwb/partnerships.jsp?urltype=tree.TreeTempUrl&wbtreeid=1006">ºÏ×÷°ìÑ§</A>
-</LI>
-<LI><A href="xinban/gjjllby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1751">Íâ×¨ÒıÖÇ</A>
-</LI>
-<LI><A href="http://isc.sjtu.edu.cn/">¹ú¼Ê½ÌÓı</A>
-</LI>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1632">º£ÍâÓÎÑ§</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV>
-<DIV style="float: left;width: 520px;height: 233px">
-<DIV style="width: 480px;padding-top: 10px;height: 190px;background-color: #9d3337">
-<UL style="padding-right: 0px;padding-left: 0px;font-size: 12px;padding-bottom: 0px;margin: 0px;color: #ffffff;line-height: 30px;padding-top: 0px;font-family: ËÎÌå;list-style-type: none"><!--#begineditable clone="0" namechanged="0" order="16" ispublic="0" tagname="×¨À¸1" viewid="51282" contype="" stylesysid="" layout="" action="" name="×¨À¸"-->
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="171604.htm" class="c1336" title="è‹±å›½é¦–ç›¸å¡æ¢…ä¼¦è®¿é—®ä¸Šæµ·äº¤é€šå¤§å­¦å¹¶ä¸å¸ˆç”Ÿäº¤æµ[å›¾]" target="_blank">è‹±å›½é¦–ç›¸å¡æ¢…ä¼¦è®¿é—®ä¸Šæµ·äº¤é€š...</a>
+      
+        <span class="imagestyle1336">[å›¾]</span>
+          
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="128790.htm" class="c1336" title="å…¨å›½äººå¤§å¸¸å§”ä¼šå‰¯å§”å‘˜é•¿è·¯ç”¬ç¥¥åšå®¢å¤§å¸ˆè®²å›[å›¾]" target="_blank">å…¨å›½äººå¤§å¸¸å§”ä¼šå‰¯å§”å‘˜é•¿è·¯ç”¬...</a>
+      
+        <span class="imagestyle1336">[å›¾]</span>
+          
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="128715.htm" class="c1336" title="ä¸Šæµ·äº¤å¤§æ ¡å‹æœ±è‹±å¯Œã€å¼ å³¥è£ä»»æˆ‘å›½ç¬¬ä¸€è‰˜èˆªæ¯æ€»è®¾è®¡å¸ˆå’Œèˆ°é•¿[å›¾]" target="_blank">ä¸Šæµ·äº¤å¤§æ ¡å‹æœ±è‹±å¯Œã€å¼ å³¥è£...</a>
+      
+        <span class="imagestyle1336">[å›¾]</span>
+          
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="113008.htm" class="c1336" title="ä¸Šæµ·äº¤å¤§é€€ä¼‘æ•™å¸ˆæ­¦éœæ•è·ä¸­åæ…ˆå–„å¥–[å›¾]" target="_blank">ä¸Šæµ·äº¤å¤§é€€ä¼‘æ•™å¸ˆæ­¦éœæ•è·ä¸­...</a>
+      
+        <span class="imagestyle1336">[å›¾]</span>
+          
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="112932.htm" class="c1336" title="ä¸Šæµ·äº¤å¤§çºªå¿µå»ºæ ¡116å‘¨å¹´å¤§ä¼šéš†é‡ä¸¾è¡Œ[å›¾]" target="_blank">ä¸Šæµ·äº¤å¤§çºªå¿µå»ºæ ¡116å‘¨å¹´å¤§ä¼š...</a>
+      
+        <span class="imagestyle1336">[å›¾]</span>
+          
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="112884.htm" class="c1336" title="ä¸Šæµ·äº¤å¤§-å·´é»é«˜ç§‘å“è¶Šå·¥ç¨‹å¸ˆå­¦é™¢ç­¾çº¦ä»ªå¼ä¸¾è¡Œ[å›¾]" target="_blank">ä¸Šæµ·äº¤å¤§-å·´é»é«˜ç§‘å“è¶Šå·¥ç¨‹å¸ˆ...</a>
+      
+        <span class="imagestyle1336">[å›¾]</span>
+          
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="111949.htm" class="c1336" title="[æ–‡æ±‡æŠ¥]ç§‘å­¦å®¶åœ¨å¤§äºšæ¹¾å®éªŒå®¤å‘ç°æ–°çš„ä¸­å¾®å­æŒ¯è¡" target="_blank">[æ–‡æ±‡æŠ¥]ç§‘å­¦å®¶åœ¨å¤§äºšæ¹¾å®éªŒ...</a>
+        
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="111869.htm" class="c1336" title="ç‹æŒ¯ä¹‰é™ˆç«ºåœ¨ç¾æ¥å—åœ£â€¢ä¹”å¥‡ç™Œç—‡ç ”ç©¶è¿›å±•å¤§å¥–[å›¾]" target="_blank">ç‹æŒ¯ä¹‰é™ˆç«ºåœ¨ç¾æ¥å—åœ£â€¢ä¹”å¥‡...</a>
+      
+        <span class="imagestyle1336">[å›¾]</span>
+          
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="111093.htm" class="c1336" title="ä¸Šæµ·äº¤å¤§ä¸å·´é»é«˜ç§‘é›†å›¢ç­¾ç½²å“è¶Šå·¥ç¨‹å¸ˆå­¦é™¢åˆä½œå¤‡å¿˜å½•[å›¾]" target="_blank">ä¸Šæµ·äº¤å¤§ä¸å·´é»é«˜ç§‘é›†å›¢ç­¾ç½²...</a>
+      
+        <span class="imagestyle1336">[å›¾]</span>
+          
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="111087.htm" class="c1336" title="ç‰¹åˆ«ç ”ç©¶å‘˜ä¸‡æ–‡æ°åšå£«ç ”ç©¶æˆæœå…¥é€‰2011å¹´ä¸–ç•Œåå¤§ç§‘æŠ€è¿›å±•" target="_blank">ç‰¹åˆ«ç ”ç©¶å‘˜ä¸‡æ–‡æ°åšå£«ç ”ç©¶æˆ...</a>
+        
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="111073.htm" class="c1336" title="[æ–‡æ±‡æŠ¥Â·å¤´ç‰ˆ]ä¸Šæµ·äº¤é€šå¤§å­¦åŠ è®¾â€œè¾…åŠ©å°é˜¶â€å¸®â€œé’æ¤’â€è¿›æ­¥" target="_blank">[æ–‡æ±‡æŠ¥Â·å¤´ç‰ˆ]ä¸Šæµ·äº¤é€šå¤§å­¦åŠ ...</a>
+        
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="111058.htm" class="c1336" title="[å…‰æ˜æ—¥æŠ¥]ä¸Šæµ·äº¤å¤§â€œç‰¹åˆ«ç ”ç©¶å‘˜â€å²—ä½ï¼šæ­å»ºé’å¹´æ•™å¸ˆæˆæ‰å¤§èˆå°" target="_blank">[å…‰æ˜æ—¥æŠ¥]ä¸Šæµ·äº¤å¤§â€œç‰¹åˆ«ç ”...</a>
+        
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="111053.htm" class="c1336" title="[äººæ°‘æ—¥æŠ¥]ä¸Šæµ·äº¤å¤§æ ¡é•¿å¼ æ°é™¢å£«ï¼šæå‡å¤§å­¦æ–‡åŒ–ä¼ æ‰¿åˆ›æ–°èƒ½åŠ›" target="_blank">[äººæ°‘æ—¥æŠ¥]ä¸Šæµ·äº¤å¤§æ ¡é•¿å¼ æ°...</a>
+        
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="111039.htm" class="c1336" title="ç‹æŒ¯ä¹‰ã€é™ˆç«ºè£è·ç¬¬7å±Šåœ£Â·ä¹”å¥‡ç™Œç—‡ç ”ç©¶è¿›å±•å¤§å¥–" target="_blank">ç‹æŒ¯ä¹‰ã€é™ˆç«ºè£è·ç¬¬7å±Šåœ£Â·ä¹”...</a>
+        
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>  
+<tr><td align="center" valign="middle" width="10" nowrap><span class="leaderfont1336"><img src="../../images/index_140.jpg" align="absmiddle" border="0"></span></td><td valign="middle" align="left">
+          
+      <a href="109555.htm" class="c1336" title="äº¤å¤§â€œä¸–ç•Œå››å¤§ååˆŠâ€è®ºæ–‡æ•°é¦–å±…å…¨å›½é«˜æ ¡ç¬¬ä¸€" target="_blank">äº¤å¤§â€œä¸–ç•Œå››å¤§ååˆŠâ€è®ºæ–‡æ•°...</a>
+        
+      
+      
+      </td>  
+        <td valign="middle" align="right" class="timestyle1336"></td></tr>
+</table>  <!--#endeditable--></TD></TR></TBODY></TABLE>
+<TABLE class="bottomline2" border="0" cellspacing="0" cellpadding="0" width="250" height="1">
+<TBODY>
+<TR>
+<TD valign="middle" width="250" align="left"></TD></TR></TBODY></TABLE>
+<TABLE border="0" cellspacing="0" cellpadding="0" width="250" height="15">
+<TBODY>
+<TR>
+<TD valign="middle" width="250" align="left"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE border="0" cellspacing="0" cellpadding="0" width="1000" align="center" height="1">
+<TBODY>
+<TR>
+<TD></TD></TR></TBODY></TABLE>
+<TABLE border="0" cellspacing="0" cellpadding="0" width="1000" align="center" height="62">
+<TBODY>
+<TR>
+<TD bgcolor="#595758" valign="middle" align="left">
+<TABLE border="0" cellspacing="0" cellpadding="0" width="100%">
+<TBODY>
+<TR>
+<TD valign="middle" width="18" align="left"></TD>
+<TD valign="middle" width="290" align="left"><IMG src="../../images/index_203.jpg" width="164" height="39"></TD>
+<TD valign="middle" align="left">
+<TABLE border="0" cellspacing="0" cellpadding="0" width="58%">
+<TBODY>
+<TR>
+<TD class="fon8" height="20" valign="middle" align="center"><!--#begineditable contype="" name="åº•éƒ¨é“¾æ¥" action="" layout="" clone="0" namechanged="0" order="6" ispublic="0" tagname="åº•éƒ¨é“¾æ¥" viewid="1329" stylesysid=""-->     
+     
 
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1023/395182.htm" target="_blank" title="[ÎÄ»ã±¨]ÉÏº£½»´óµ³Î¯Êé¼Ç½ªË¹ÏÜ£ºÈËÉúµ±±¾Êé ÎÒĞ´ÁË60Ò³" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">[ÎÄ»ã±¨]ÉÏº£½»´óµ³Î¯Êé¼Ç½ªË¹ÏÜ£ºÈËÉúµ±±¾Êé ÎÒĞ´ÁË60Ò³</a></span></li>
-
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1023/363508.htm" target="_blank" title="[ÉÏº£½»´óµÚÊ®´Îµ³´ú»á×¨Ìâ]»ù²ãµ¥Î»µ³½¨·ç²ÉÑ²Àñ" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">[ÉÏº£½»´óµÚÊ®´Îµ³´ú»á×¨Ìâ]»ù²ãµ¥Î»µ³½¨·ç²ÉÑ²Àñ</a></span></li>
-
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1023/393914.htm" target="_blank" title="[ÉÏº£½»´óµÚÊ®´Îµ³´ú»á×¨Ìâ]»ù²ãµ¥Î»µ³Ô±·ç²ÉÕ¹Ê¾" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">[ÉÏº£½»´óµÚÊ®´Îµ³´ú»á×¨Ìâ]»ù²ãµ¥Î»µ³Ô±·ç²ÉÕ¹Ê¾</a></span></li>
-
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1023/395455.htm" target="_blank" title="[Ò»ÖÜÉùÒô]2014Äê12ÔÂ2ÈÕ-12ÔÂ8ÈÕ" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">[Ò»ÖÜÉùÒô]2014Äê12ÔÂ2ÈÕ-12ÔÂ8ÈÕ</a></span></li>
-
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1023/393913.htm" target="_blank" title="[ÄÏÑóÊÓ½ç]Ãñ×åµÄ£¬ÊÀ½çµÄ£¡[Í¼]" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">[ÄÏÑóÊÓ½ç]Ãñ×åµÄ£¬ÊÀ½çµÄ£¡[Í¼]</a></span></li>
-
-    <li style="padding-left:24px"><span style="float:left;width:400px"><img src="images/ii_r2_c2.png" width="16" height="11" /><a href="http://news.sjtu.edu.cn/info/1023/395287.htm" target="_blank" title="[Çà´º×ã¼£]ÀîÃùÏô£ºÖ»Ô¸°ÑÆ½·²Ğ¡ÊÂ×öµ½¼«ÖÂ[Í¼]" style="font-family:ËÎÌå;font-size: 12px;color: #FFFFFF;line-height:30px">[Çà´º×ã¼£]ÀîÃùÏô£ºÖ»Ô¸°ÑÆ½·²Ğ¡ÊÂ×öµ½¼«ÖÂ[Í¼]</a></span></li>
-<!--#endeditable--></UL></DIV>
-<DIV style="width: 520px;height: 22px;background-color: #9d3337">
-<DIV style="font-size: 12px;float: right;width: 40px;color: #ffffff;padding-top: 4px;text-align: center"><A href="http://www.sjtu.edu.cn/"><FONT color="#ffffff">¸ü¶à</FONT></A></DIV>
-<DIV style="float: right;width: 40px;height: 22px;background-color: #373737"></DIV></DIV>
-<DIV style="width: 480px;height: 10px;background-color: #9d3337"></DIV></DIV>
-<DIV class="nrljy">
-<DIV class="dhljbt">´óÑ§ÎÄ»¯</DIV>
-<DIV class="dhsylj "><!--#begineditable clone="0" namechanged="0" order="13" ispublic="0" tagname="´óÑ§ÎÄ»¯" viewid="51037" contype="" stylesysid="" layout="" action="" name="´óÑ§ÎÄ»¯"--><script>
-    var newimg1 = new Image();
-    newimg1.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_1.gif";
-    var newimg2 = new Image();
-    newimg2.src = "/system/resource/images/nav/imgnav_vsb_level1_bg_2.gif";
-    var newimg3 = new Image();
-    newimg3.src = "/system/resource/images/nav/imgnav_vsb_level2_bg_1.png";
+  
+     
+ 
+<script language="javascript" src="../../_dwr/interface/NewsvoteDWR.js"></script>
+<script language="javascript" src="../../_dwr/engine.js"></script>
+<script type="text/javascript">
+//ç”¨æ¥å®ç°æ–‡ç« çš„è®¡æ•°
+function getClickTimes1329(newsid, owner,type,randomid) { 
+    NewsvoteDWR.getLinkClickTimes(owner,type,newsid,randomid,onGetClickTimes);
+} 
+//ç”¨æ¥å®ç°æ–‡ç« çš„è®¡æ•°
+function onGetClickTimes1329(originalRequest) 
+{
+    var params = originalRequest;
+    if(params != null)
+    {
+        if(params[0] != null && params[1] != null)
+        {
+            var objs = document.getElementsByTagName("span"); 
+            var objid =params[2]+params[0];
+            for(i=0;i<objs.length;i++)
+            {
+                if(objid==objs[i].id)
+                   objs[i].innerHTML= params[1];//params["wbshowtimes"]; 
+            }
+        }   
+    }
+}
+function addClickTimes1329(urlid,owner,type){
+    NewsvoteDWR.addLinkClickTimes(urlid,owner,type);
+} 
 </script>
-<!--[if IE 6]> <style>#c51037{behavior: url("/system/resource/js/hover.htc")</style><![endif]--> 
-<DIV id="c51037"> 
-<UL>
-<LI><A href="xinban/sanjiwfylby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1760">Ğ£Ê·×ÊÁÏ</A>
-</LI>
-<LI><A href="xinban/sanjilby.jsp?urltype=tree.TreeTempUrl&wbtreeid=1635">ÎÄ»¯»î¶¯</A>
-</LI>
-<LI><A href="http://www.sjtu.edu.cn/jdwmw.htm">ÎÄÃ÷ÔÚÏß</A>
-</LI>
-<LI><A href="xbdh/ztbk/dxwh/wbjd.htm">ÎÄ²©½»´ó</A>
-</LI>
-<LI><A href="http://youth.sjtu.edu.cn/plus/list.php?tid=40">ÎÄ»¯ÉçÍÅ</A>
-</LI>
-</UL>
-</div><!--#endeditable--></DIV></DIV></DIV></DIV></DIV>
-<DIV style="clear: both"></DIV></DIV>
-<DIV class="juzhong" style="height: 3px"></DIV>
-<DIV class="juzhong" style="background-image: url(images/i_r18_c24.jpg);height: 71px">
-<DIV id="sybanquan"><!--#begineditable clone="0" namechanged="0" order="17" ispublic="0" tagname="Ê×Ò³°æÈ¨" viewid="51034" contype="" stylesysid="" layout="" action="" name="Ê×Ò³°æÈ¨"--><table class="winstyle51034" width="100%">
-    <tr>
-        <td><span style="padding-right: 15px;padding-left: 260px;float: left;padding-bottom: 0px;padding-top: 6px">»¦ICP±¸05052060 <a href="#"><font style="color: #ffffff">»¦¾Ù±¨ÖĞĞÄ</font></a> °æÈ¨ËùÓĞ&copy;ÉÏº£½»Í¨´óÑ§</span>
-<span style="float: left"><a href="http://weibo.com/chiaotunguniv" target="_blank"><img height="28" src="images/i_r3_c4b.jpg" width="28" align="top" style="border-right: 0px;border-top: 0px;border-left: 0px;border-bottom: 0px" /></a><span style="font-size: 20px">&nbsp;&nbsp;</span><a href="http://t.qq.com/sjtu_1896" target="_blank"><img height="28" src="images/i_r3_c6b.jpg" width="28" style="border-right: 0px;border-top: 0px;border-left: 0px;border-bottom: 0px" /></a><span style="font-size: 20px">&nbsp;&nbsp;</span><a href="http://page.renren.com/600993176" target="_blank"><img height="28" src="images/i_r3_c8b.jpg" width="28" style="border-right: 0px;border-top: 0px;border-left: 0px;border-bottom: 0px" /></a></span> 
-<p>&nbsp;</p> 
-<p><span style="float: left;width: 940px">µØÖ·£ºÉÏº£ÊĞ¶«´¨Â·800ºÅ ÓÊ±à£º200240 ²éºÅ£º86-21-54740000 <a href="xinban/lyb.jsp?urltype=tree.TreeTempUrl&wbtreeid=1662"><font style="color: #ffffff">ÁªÏµÎÒÃÇ</font></a> <a href="http://bbs.sjtu.edu.cn/bbscon?board=TrafficInfo&amp;file=M%2E1273596232%2EA"><font style="color: #ffffff">ÖÜ±ß½»Í¨</font></a></span></p></td>
-    </tr>
-</table><!--#endeditable--></DIV></DIV>
-<DIV></DIV></DIV><script type="text/javascript">
-<!--
-var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
-//-->
-</script>
+<table border="0" width="250">     
+    <tr>   
+            <td align="absmiddle">
+<span class="leaderstyle1329"></span></td>     
+            <td width="" align="center">   
+                <A HREF="http://news.sjtu.edu.cn/info/1019/27436.htm" onclick="addClickTimes1329(1038,741155814,'wburl')"><span>æŠ•ç¨¿é¡»çŸ¥</span></A>
+                 
+            </td>     
+   
+            <td align="absmiddle">
+
+                <span class="jumpstyle1329">|</span>
+            <span class="leaderstyle1329"></span></td>     
+            <td width="" align="center">   
+                <A HREF="http://news.sjtu.edu.cn/info/1020/27435.htm" onclick="addClickTimes1329(1040,741155814,'wburl')"><span>è”ç³»æˆ‘ä»¬</span></A>
+                 
+            </td>     
+</tr></table><!--#endeditable--></TD></TR>
+<TR>
+<TD class="fon8" height="20" valign="middle" align="center"><!--#begineditable contype="" name="ç‰ˆæƒ" action="" layout="" clone="0" namechanged="0" order="7" ispublic="0" tagname="ç‰ˆæƒ" viewid="1327" stylesysid=""--><FONT color="#ffffff">æ²ªICPå¤‡020861 &nbsp;ä¸Šæµ·äº¤é€šå¤§å­¦æ–°é—»ä¸­å¿ƒç‰ˆæƒæ‰€æœ‰&nbsp;&nbsp;æ–°é—»ç½‘ç¼–è¾‘éƒ¨ç»´æŠ¤</FONT><!--#endeditable--></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
 
 </BODY></HTML>
