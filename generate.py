@@ -5,9 +5,8 @@ import reg_tools
 def getOutlinksString(url):
 	conn = database.getConn()
 	cursor = conn.cursor()
-	sql = "SELECT * FROM webpage WHERE url = %s"
-	param = (url)
-	cursor.execute(sql,param)
+	sql = "SELECT * FROM webpage WHERE url = '%s'"%(url)
+	cursor.execute(sql)
 	row = cursor.fetchone()
 	cursor.close()
 	conn.close()
@@ -40,40 +39,62 @@ def filterOutLinks(links_arr):
 			proper_links.append(link)
 	return proper_links
 
-def checkExistUrl(links_arr):
+def addNewUrl(outlinks_sql):
+
 	conn = database.getConn()
 	cursor = conn.cursor()
-	sql = "SELECT * FROM webpage WHERE url = %s"
-	insert_arr = []
-	for link in links_arr:
-		param = (link)
-		result = cursor.execute(sql,param)
-		if result != None:
-			insert_arr.append(link)
 
-	cursor.close()
-	conn.close()
-	return insert_arr
+	# check if empty
+	cursor.execute(outlinks_sql)
+	all_num = cursor.rowcount
+	if all_num == 0:
+		return {'exist':0 , 'insert':0 , 'all':0}
+		cursor.close()
+		conn.close()
 
-def insertIntoDB(link_arr):
-	conn = database.getConn()
-	cursor = conn.cursor()
-	sql = "INSERT INTO webpage SET url = %s"
-	for link in link_arr:
-		param = (link)
-		cursor.execute(sql,param)
-	cursor.close()
-	conn.close()
+	# input the urls into bloom
+	import bitarray
+	from pybloom import ScalableBloomFilter
 	
+	sql = "SELECT url FROM webpage WHERE 1"
+	cursor.execute(sql)
+	exist_num = cursor.rowcount
+	rows = cursor.fetchall()
 
-def updateStatus(url):
-	conn = database.getConn()
-	cursor = conn.cursor()
-	sql = "UPDATE webpage SET status = 3 WHERE url = %s"
-	param = (url)
-	cursor.execute(sql,param)
+	sbf = ScalableBloomFilter(mode=ScalableBloomFilter.SMALL_SET_GROWTH)
+	for row in rows:
+		sbf.add(row[0])
+
+	#end bloom .. sbf
+
+	cursor.execute(outlinks_sql)
+	rows = cursor.fetchall()
+
+	insert_arr = []
+	insert_num = 0
+	for row in rows:
+		outlinks_arr = row[0].split(',')
+		proper_links = filterOutLinks(outlinks_arr)
+		for link in proper_links:
+			if link in sbf:
+				pass
+			else:
+				insert_num += 1
+				sbf.add(link)
+				insert_arr.append((link,0))
+
+
+	sql = "INSERT INTO webpage (url,status)VALUE(%s,%s)"
+	cursor.executemany(sql,insert_arr)
+
+	sql = "UPDATE webpage SET status = 3 WHERE status = 2"
+	cursor.execute(sql)
+
 	cursor.close()
 	conn.close()
+
+	return {'exist':exist_num , 'insert':insert_num , 'all':all_num}
+
 
 def generateSingleUrl(url):
 	outlinks_str = getOutlinksString(url)
@@ -90,39 +111,15 @@ def generateSingleUrl(url):
 
 def generateAll(total = 100):
 	print 'Generate - start to generate %s url'%(total)
-	conn = database.getConn()
-	cursor = conn.cursor()
 	if total == 'all':
-		sql = "SELECT * FROM webpage WHERE status = 2"
-		param = ()
+		sql = "SELECT outlinks FROM webpage WHERE status = 2"
 	else:
-		sql = "SELECT * FROM webpage WHERE status = 2 LIMIT %s"
-		param = (total)
+		sql = "SELECT outlinks FROM webpage WHERE status = 2 LIMIT %s"%(total)
 
-	cursor.execute(sql,param)
-	numrows = int(cursor.rowcount)
-	if(numrows == 0):
-		print 'Generate - Summary : All:0 New:0'
-		return 0
-	rows = cursor.fetchall()
-	cursor.close()
-	conn.close()
+	result = addNewUrl(sql)
 
-	cnt_udpate = 0
-	for row in rows:
-		url = row[1]
-		cnt_udpate += generateSingleUrl(url)
-	
-	print 'Generate - Summary : All:%s New:%s'%(numrows,cnt_udpate)
+	print 'Generate - Summary : all %s exist %s insert %s'%(result['all'] , result['exist'] , result['insert'])
 	return 1
 
-def check(link):
-	conn = database.getConn()
-	cursor = conn.cursor()
-	sql = "SELECT url FROM webpage WHERE 1"
-	cursor.execute(sql)
-	rows = cursor.fetchall()
-	for row in rows:
-		print row[0]
 
-from pybloom import BloomFilter
+

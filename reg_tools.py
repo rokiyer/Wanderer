@@ -4,6 +4,8 @@ import time
 from bs4 import BeautifulSoup
 from urlparse import urljoin
 
+
+
 def filter_tags(s):  
     re_cdata=re.compile('//<!\[CDATA\[[^>]*//\]\]>',re.I) #CDATA  
     re_script=re.compile('<\s*script[^>]*>(.|\n)*?<\s*/\s*script\s*>',re.I)#Script  
@@ -76,6 +78,9 @@ def findLastModifyTime(content):
         else:
             s = datetime.datetime.strptime(datetime_str,' %d-%b-%Y %H:%M:%S')
             return time.mktime(s.timetuple())
+
+
+
 
 
 def allowUrl(url):

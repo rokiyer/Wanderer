@@ -11,14 +11,12 @@ f = open("url.txt" , 'r')
 for line in f.readlines():
 	print line
 	total += 1
-	sql = "SELECT * FROM webpage WHERE url = %s"
-	param = ( line )
-	cursor.execute(sql,param)
+	sql = "SELECT * FROM webpage WHERE url = '%s'"%(line)
+	cursor.execute(sql)
 	numrows = int(cursor.rowcount)
 	if numrows == 0:
-		sql = "INSERT INTO webpage SET url = %s"
-		param = ( line )
-		result = cursor.execute(sql,param)
+		sql = "INSERT INTO webpage SET url = '%s'"%(line)
+		result = cursor.execute(sql)
 		if result == 1:
 			succ += 1
 			continue

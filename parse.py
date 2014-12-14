@@ -47,7 +47,11 @@ def update(url,parse_result):
 	sql = "UPDATE `webpage` SET `status`=%s,`title`=%s,`text`=%s,`outlinks`=%s,\
 		`prev_modified_time`=%s,`modified_time`=%s WHERE `url`=%s"
 	param = (status,title,text,outlinks,prev_modified_time,last_modify_time,url)
-	result = cursor.execute(sql,param)
+	try:
+		cursor.execute(sql,param)
+		result = 1
+	except:
+		result = 0
 	cursor.close()
 	conn.close()
 	return result
@@ -55,9 +59,8 @@ def update(url,parse_result):
 def getContent(url):
 	conn = database.getConn()
 	cursor = conn.cursor()
-	sql = "SELECT * FROM webpage WHERE url = %s"
-	param = (url)
-	cursor.execute(sql,param)
+	sql = "SELECT * FROM webpage WHERE url = '%s'"%(url)
+	cursor.execute(sql)
 	row = cursor.fetchone()
 	if row == None:
 		return 0
@@ -67,9 +70,8 @@ def getContent(url):
 def getHead(url):
 	conn = database.getConn()
 	cursor = conn.cursor()
-	sql = "SELECT * FROM webpage WHERE url = %s"
-	param = (url)
-	cursor.execute(sql,param)
+	sql = "SELECT * FROM webpage WHERE url = '%s'"%(url)
+	cursor.execute(sql)
 	row = cursor.fetchone()
 	if row == None:
 		return 0
@@ -79,9 +81,8 @@ def getHead(url):
 def getRow(url):
 	conn = database.getConn()
 	cursor = conn.cursor()
-	sql = "SELECT * FROM webpage WHERE url = %s"
-	param = (url)
-	cursor.execute(sql,param)
+	sql = "SELECT * FROM webpage WHERE url = '%s'"%(url)
+	cursor.execute(sql)
 	row = cursor.fetchone()
 	cursor.close()
 	conn.close()
@@ -91,14 +92,12 @@ def parseAll(total = 100):
 	print 'Parse - Start... %s url'%(total)
 	if total == 'all':
 		sql = "SELECT url FROM webpage WHERE status = 1"
-		param = ()
 	else:
-		sql = "SELECT url FROM webpage WHERE status = 1 LIMIT %s"
-		param = (int(total))
+		sql = "SELECT url FROM webpage WHERE status = 1 LIMIT %s"%(total)
 
 	conn = database.getConn()
 	cursor = conn.cursor()
-	cursor.execute(sql,param)
+	cursor.execute(sql)
 	numrows = cursor.rowcount
 	if(numrows == 0):
 		print 'Parse - Summary : All:0 Succ:0 Fail:0'

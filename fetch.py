@@ -85,7 +85,16 @@ def getResponse(request):
 			return result
 
 		# try to find out charset like gbk 
-		content = response.read()
+		try :
+			content = response.read()
+		except:
+			result = {
+			'code':0 ,
+			'head':'',
+			'content':'',
+			'error_msg':'time out'
+			}
+			
 		if charset == '':
 			char_det = chardet.detect(content)
 			charset = char_det['encoding']
@@ -166,13 +175,12 @@ def fetchAll(total = 100):
 	conn = database.getConn()
 	cursor = conn.cursor()
 	if total == 'all':
-		sql = "SELECT url FROM webpage WHERE status = %s "
-		param = ( 0 )
+		sql = "SELECT url FROM webpage WHERE status = 0 "
+		
 	else:
-		sql = "SELECT url FROM webpage WHERE status = %s LIMIT %s"
-		param = ( 0 , total )
+		sql = "SELECT url FROM webpage WHERE status = %s LIMIT %s"%(0,total)
 	
-	cursor.execute(sql,param)
+	cursor.execute(sql)
 	numrows = cursor.rowcount
 	cnt_succ = 0
 	if numrows != 0:

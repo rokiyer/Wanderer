@@ -9,7 +9,7 @@ import time
 print '·'
 print 'Crawl - Start... '
 print '='*50
-# fetch.fetchAll('all')
-# parse.parseAll('all')
+fetch.fetchAll('all')
+parse.parseAll('all')
 generate.generateAll('all')
 print '='*50
