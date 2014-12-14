@@ -99,11 +99,3 @@ def denyUrlFilter():
         pattern_arr.append(pattern)
     return pattern_arr
 
-# patterns = denyUrlFilter()
-# for pattern in patterns:
-#     print pattern.match('http://news.sjtu.edu.cn/#')
-
-url = 'http://news.sjtu.edu.cn/info/1010/398754.htm'
-link = '59016.htm'
-
-print urljoin(url,link)

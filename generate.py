@@ -40,22 +40,40 @@ def filterOutLinks(links_arr):
 			proper_links.append(link)
 	return proper_links
 
-def update(links_arr):
+def checkExistUrl(links_arr):
 	conn = database.getConn()
 	cursor = conn.cursor()
-	sql1 = "SELECT * FROM webpage WHERE url = %s"
-	sql2 = "INSERT INTO webpage SET url = %s"
-	cnt_udpate = 0
+	sql = "SELECT * FROM webpage WHERE url = %s"
+	insert_arr = []
 	for link in links_arr:
 		param = (link)
-		cursor.execute(sql1,param)
-		if cursor.rowcount == 0:
-			#insert link into page 
-			cursor.execute(sql2,param)
-			cnt_udpate += 1
+		result = cursor.execute(sql,param)
+		if result != None:
+			insert_arr.append(link)
+
 	cursor.close()
 	conn.close()
-	return cnt_udpate
+	return insert_arr
+
+def insertIntoDB(link_arr):
+	conn = database.getConn()
+	cursor = conn.cursor()
+	sql = "INSERT INTO webpage SET url = %s"
+	for link in link_arr:
+		param = (link)
+		cursor.execute(sql,param)
+	cursor.close()
+	conn.close()
+	
+
+def updateStatus(url):
+	conn = database.getConn()
+	cursor = conn.cursor()
+	sql = "UPDATE webpage SET status = 3 WHERE url = %s"
+	param = (url)
+	cursor.execute(sql,param)
+	cursor.close()
+	conn.close()
 
 def generateSingleUrl(url):
 	outlinks_str = getOutlinksString(url)
@@ -63,10 +81,12 @@ def generateSingleUrl(url):
 		return 0;
 	outlinks_arr = outlinks_str.split(',')
 	proper_links = filterOutLinks(outlinks_arr)
-	cnt_udpate = update(proper_links)
+	insert_links = checkExistUrl(proper_links)
+	insertIntoDB(insert_links)
+	updateStatus(url)
 	print 'Generate - ' + url,
-	print ' out_links:%s proper_links:%s update_links:%s'%(len(outlinks_arr)-1 , len(proper_links),cnt_udpate )
-	return cnt_udpate
+	print ' out_links:%s proper_links:%s update_links:%s'%(len(outlinks_arr)-1 , len(proper_links),len(insert_links) )
+	return len(insert_links)
 
 def generateAll(total = 100):
 	print 'Generate - start to generate %s url'%(total)
@@ -85,15 +105,24 @@ def generateAll(total = 100):
 		print 'Generate - Summary : All:0 New:0'
 		return 0
 	rows = cursor.fetchall()
+	cursor.close()
+	conn.close()
+
 	cnt_udpate = 0
 	for row in rows:
 		url = row[1]
 		cnt_udpate += generateSingleUrl(url)
-		
-	cursor.close()
-	conn.close()
+	
 	print 'Generate - Summary : All:%s New:%s'%(numrows,cnt_udpate)
 	return 1
 
+def check(link):
+	conn = database.getConn()
+	cursor = conn.cursor()
+	sql = "SELECT url FROM webpage WHERE 1"
+	cursor.execute(sql)
+	rows = cursor.fetchall()
+	for row in rows:
+		print row[0]
 
-
+from pybloom import BloomFilter
