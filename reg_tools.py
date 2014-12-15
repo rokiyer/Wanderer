@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 from urlparse import urljoin
 
 
-
 def filter_tags(s):  
     re_cdata=re.compile('//<!\[CDATA\[[^>]*//\]\]>',re.I) #CDATA  
     re_script=re.compile('<\s*script[^>]*>(.|\n)*?<\s*/\s*script\s*>',re.I)#Script  
@@ -25,14 +24,7 @@ def filter_tags(s):
     s=re_comment.sub('',s)
     return s  
 
-# def findUrls(s):
-#     url_reg = '(((http|https)://)(([a-zA-Z0-9\._-]+\.[a-zA-Z]{2,6})|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,4})*(/[a-zA-Z0-9\&%_\./-~-]*)?)'
-#     pattern = re.compile(url_reg)
-#     urls_result = pattern.findall(s)
-#     outlinks = ''
-#     for match in urls_result:
-#         outlinks += ',' + match[0]
-#     return outlinks
+
 def findUrls(content , url):
     soup = BeautifulSoup(content)
     anchor_arr = soup.find_all('a')
@@ -80,16 +72,8 @@ def findLastModifyTime(content):
             return time.mktime(s.timetuple())
 
 
-
-
-
-def allowUrl(url):
-    pattern = re.compile('cc.sjtu.edu.cn')
-    result = pattern.search(url)
-    return (result == None)
-
 def allowUrlFilter():
-    reg_arr = ['^http://news.sjtu.edu.cn(/)?']
+    reg_arr = ['^http://([a-z0-9]*\.)*sjtu.edu.cn(/)?']
     pattern_arr = []
     for reg in reg_arr:
         pattern = re.compile(reg,re.I)
@@ -97,10 +81,22 @@ def allowUrlFilter():
     return pattern_arr
 
 def denyUrlFilter():
-    reg_arr = ['.*\.(jpg|jpeg|png|gif|iso|rar|zip|exe|pdf|rm|avi|tmp|xls|txt|doc)$','.*#$']
+    reg_arr = ['.*\.(jpg|jpeg|png|gif|iso|rar|zip|exe|pdf|rm|avi|tmp|xls|txt|doc)$','.*#$',
+    '^http://news.sjtu.edu.cn(/)?',
+    '^http://www.jwc.sjtu.edu.cn(/)?',
+    '^http://cc.sjtu.edu.cn(/)?']
     pattern_arr = []
     for reg in reg_arr:
         pattern = re.compile(reg,re.I)
         pattern_arr.append(pattern)
     return pattern_arr
 
+def isDenyUrl(url):
+    pattern_arr = denyUrlFilter()
+    answer = 0
+    for pattern in pattern_arr:
+        result = pattern.match(url)
+        if result != None:
+            answer = 1
+            break;
+    return answer

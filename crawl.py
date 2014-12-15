@@ -5,7 +5,6 @@ import parse
 import generate
 import time  
 
-
 print '·'
 print 'Crawl - Start... '
 print '='*50

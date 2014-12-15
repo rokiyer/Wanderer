@@ -8,7 +8,7 @@ sys.setdefaultencoding('utf8')
 
 
 def parse(url):
-	if reg_tools.allowUrl(url) == False:
+	if reg_tools.isDenyUrl(url):
 		return 0
 
 	row = getRow(url)

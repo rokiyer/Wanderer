@@ -39,6 +39,29 @@ def filterOutLinks(links_arr):
 			proper_links.append(link)
 	return proper_links
 
+def filterLink(link):
+	allow_patterns = reg_tools.allowUrlFilter()
+	deny_patterns = reg_tools.denyUrlFilter()
+
+	filter_result = 1
+	for pattern in allow_patterns:
+		result = pattern.match(link)
+		if result == None:
+			filter_result = 0
+			break;
+	for pattern in deny_patterns:
+		result = pattern.match(link)
+		if result != None:
+			filter_result = 0
+			break;
+	if filter_result:
+		# remove slash
+		if link != '' and link[-1] == '/':
+			link = link[0:-1]
+		return link
+	else:
+		return ''
+
 def addNewUrl():
 
 	conn = database.getConn()
@@ -46,8 +69,14 @@ def addNewUrl():
 
 	# check if empty
 	cursor.execute('SELECT outlinks FROM webpage WHERE status = 2')
-	all_num = cursor.rowcount
-	if all_num == 0:
+	num_outlinks = cursor.rowcount
+	rows_outlinks = cursor.fetchall()
+	cursor.execute("SELECT error FROM webpage WHERE status = 11")
+	num_redirect = cursor.rowcount
+	rows_redirect = cursor.fetchall()
+	
+	num_all = num_redirect + num_outlinks
+	if num_all == 0 :
 		return {'exist':0 , 'insert':0 , 'all':0}
 		cursor.close()
 		conn.close()
@@ -58,38 +87,41 @@ def addNewUrl():
 	
 	sql = "SELECT url FROM webpage WHERE 1"
 	cursor.execute(sql)
-	exist_num = cursor.rowcount
+	num_exist = cursor.rowcount
 	rows = cursor.fetchall()
 
 	sbf = ScalableBloomFilter(mode=ScalableBloomFilter.SMALL_SET_GROWTH)
 	for row in rows:
 		sbf.add(row[0])
 	#bloom end  sbf
-	cursor.execute('SELECT outlinks FROM webpage WHERE status = 2')
-	rows = cursor.fetchall()
 
 	insert_arr = []
-	insert_num = 0
-	for row in rows:
+	num_insert = 0
+
+	for row in rows_outlinks:
 		outlinks_arr = row[0].split(',')
 		proper_links = filterOutLinks(outlinks_arr)
 		for link in proper_links:
 			if link in sbf:
 				pass
 			else:
-				insert_num += 1
+				num_insert += 1
 				sbf.add(link)
 				insert_arr.append((link,0))
 
 	# for the redirect url
 	cursor.execute("SELECT error FROM webpage WHERE status = 11")
 	rows = cursor.fetchall()
-	for row in rows:
+	for row in rows_redirect:
 		link = row[0]
+		link = filterLink(link) 
+		if link == '':
+			continue
+
 		if link in sbf:
 			pass
 		else:
-			insert_num += 1
+			num_insert += 1
 			sbf.add(link)
 			insert_arr.append((link,0))
 	
@@ -101,7 +133,7 @@ def addNewUrl():
 	cursor.close()
 	conn.close()
 
-	return {'exist':exist_num , 'insert':insert_num , 'all':all_num}
+	return {'exist':num_exist , 'insert':num_insert , 'all':num_all}
 
 
 def generateSingleUrl(url):

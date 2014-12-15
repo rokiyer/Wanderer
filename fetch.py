@@ -9,7 +9,7 @@ import chardet
 
 def getRequest(url):
 	# set time out = 5s
-	socket.setdefaulttimeout(30)
+	socket.setdefaulttimeout(10)
 
 	request = urllib2.Request(url) 
 	request.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36')
@@ -19,7 +19,7 @@ def getRequest(url):
 	request.add_header('Connection', 'keep-alive')
 	return request
 
-def getResponse(request):
+def getResponse(url , request):
 	
 	try:
 	    response = urllib2.urlopen(request)
@@ -52,13 +52,13 @@ def getResponse(request):
 		'error_msg':'Unknown error'
 		}
 	else:
-		read_url = response.geturl()
-		if read_url != url:
+		real_url = response.geturl()
+		if real_url != url:
 			result = {
 			'code':300,
 			'head':'',
 			'content':'',
-			'error_msg':read_url
+			'error_msg':real_url
 			}
 			return result
 
@@ -144,6 +144,8 @@ def update(url, response):
 	status = 10
 	if response['code'] == 200 and response['error_msg'] == '':
 		status = 1
+	if response['code'] == 300:
+		status = 11
 
 	sql = "UPDATE webpage SET `code`=%s , `head`=%s , `status`=%s , \
 	`content`=%s , `error`=%s , `fetch_time`=%s \
@@ -199,7 +201,7 @@ def fetchAll(total = 100):
 			url = row[0]
 			print 'Fetch - '+url,
 			request = getRequest(url)
-			response = getResponse(request)
+			response = getResponse(url , request)
 			update(url,response)
 
 			if response['code'] == 200 and response['error_msg'] == '':
