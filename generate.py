@@ -39,20 +39,20 @@ def filterOutLinks(links_arr):
 			proper_links.append(link)
 	return proper_links
 
-def addNewUrl(outlinks_sql):
+def addNewUrl():
 
 	conn = database.getConn()
 	cursor = conn.cursor()
 
 	# check if empty
-	cursor.execute(outlinks_sql)
+	cursor.execute('SELECT outlinks FROM webpage WHERE status = 2')
 	all_num = cursor.rowcount
 	if all_num == 0:
 		return {'exist':0 , 'insert':0 , 'all':0}
 		cursor.close()
 		conn.close()
 
-	# input the urls into bloom
+	#bloom start ..input the urls into bloom
 	import bitarray
 	from pybloom import ScalableBloomFilter
 	
@@ -64,10 +64,8 @@ def addNewUrl(outlinks_sql):
 	sbf = ScalableBloomFilter(mode=ScalableBloomFilter.SMALL_SET_GROWTH)
 	for row in rows:
 		sbf.add(row[0])
-
-	#end bloom .. sbf
-
-	cursor.execute(outlinks_sql)
+	#bloom end  sbf
+	cursor.execute('SELECT outlinks FROM webpage WHERE status = 2')
 	rows = cursor.fetchall()
 
 	insert_arr = []
@@ -83,12 +81,22 @@ def addNewUrl(outlinks_sql):
 				sbf.add(link)
 				insert_arr.append((link,0))
 
-
+	# for the redirect url
+	cursor.execute("SELECT error FROM webpage WHERE status = 11")
+	rows = cursor.fetchall()
+	for row in rows:
+		link = row[0]
+		if link in sbf:
+			pass
+		else:
+			insert_num += 1
+			sbf.add(link)
+			insert_arr.append((link,0))
+	
 	sql = "INSERT INTO webpage (url,status)VALUE(%s,%s)"
 	cursor.executemany(sql,insert_arr)
 
-	sql = "UPDATE webpage SET status = 3 WHERE status = 2"
-	cursor.execute(sql)
+	cursor.execute("UPDATE webpage SET status = 3 WHERE status = 2 OR status = 11")
 
 	cursor.close()
 	conn.close()
@@ -109,15 +117,9 @@ def generateSingleUrl(url):
 	print ' out_links:%s proper_links:%s update_links:%s'%(len(outlinks_arr)-1 , len(proper_links),len(insert_links) )
 	return len(insert_links)
 
-def generateAll(total = 100):
-	print 'Generate - start to generate %s url'%(total)
-	if total == 'all':
-		sql = "SELECT outlinks FROM webpage WHERE status = 2"
-	else:
-		sql = "SELECT outlinks FROM webpage WHERE status = 2 LIMIT %s"%(total)
-
-	result = addNewUrl(sql)
-
+def generateAll():
+	print 'Generate - start to generate all parsed urls'
+	result = addNewUrl()
 	print 'Generate - Summary : all %s exist %s insert %s'%(result['all'] , result['exist'] , result['insert'])
 	return 1
 

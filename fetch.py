@@ -52,6 +52,16 @@ def getResponse(request):
 		'error_msg':'Unknown error'
 		}
 	else:
+		read_url = response.geturl()
+		if read_url != url:
+			result = {
+			'code':300,
+			'head':'',
+			'content':'',
+			'error_msg':read_url
+			}
+			return result
+
 		head = response.info()
 		code = response.getcode()
 		# refuse large page

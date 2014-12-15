@@ -11,5 +11,5 @@ print 'Crawl - Start... '
 print '='*50
 fetch.fetchAll('all')
 parse.parseAll('all')
-generate.generateAll('all')
+generate.generateAll()
 print '='*50
