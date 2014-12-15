@@ -1,3 +1,4 @@
+# encoding: utf8
 import database
 
 conn = database.getConn()

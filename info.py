@@ -1,3 +1,4 @@
+# encoding: utf8
 import database
 
 def showInfo():

@@ -1,3 +1,4 @@
+# encoding: utf8
 import database
 import re
 import reg_tools
@@ -154,6 +155,3 @@ def generateAll():
 	result = addNewUrl()
 	print 'Generate - Summary : all %s exist %s insert %s'%(result['all'] , result['exist'] , result['insert'])
 	return 1
-
-
-

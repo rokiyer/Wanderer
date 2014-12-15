@@ -1,5 +1,4 @@
-#!C:\Python27\python
-# -*- coding: utf-8 -*-  
+# encoding: utf8
 import database
 import reg_tools
 import sys  
